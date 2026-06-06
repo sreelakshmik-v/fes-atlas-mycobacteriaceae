@@ -1,0 +1,775 @@
+uniprot_acc	sprot_trembl	protein_name	species	species_taxid	gene_name
+A0A0G2Q9H6	tr	Transcriptional regulator WhiB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	whiB1_1
+A0A0G2Q9I9	tr	NADPH oxidoreductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_3260c
+A0A0H2ZQH0	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_3500
+A0A0H2ZQN9	tr	Transcriptional regulator WhiB	Mycobacterium avium (strain 104)	243243	whiB
+A0A0H2ZRA9	tr	T/U mismatch-specific DNA glycosylase	Mycobacterium avium (strain 104)	243243	MAV_1413
+A0A0H2ZRG3	tr	Nitrite reductase [NAD(P)H], small subunit	Mycobacterium avium (strain 104)	243243	nirD
+A0A0H2ZRJ8	tr	Transcriptional regulator WhiB	Mycobacterium avium (strain 104)	243243	whiB
+A0A0H2ZRT2	tr	2-methylcitrate dehydratase	Mycobacterium avium (strain 104)	243243	MAV_0346
+A0A0H2ZS00	tr	Dioxygenase large subunit	Mycobacterium avium (strain 104)	243243	MAV_5084
+A0A0H2ZS31	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_3967
+A0A0H2ZS39	tr	Conserved domain protein	Mycobacterium avium (strain 104)	243243	MAV_0913
+A0A0H2ZS41	tr	Rieske-type oxygenase	Mycobacterium avium (strain 104)	243243	MAV_1859
+A0A0H2ZS63	tr	Mycofactocin maturase MftC	Mycobacterium avium (strain 104)	243243	MAV_4478
+A0A0H2ZSC2	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_2952
+A0A0H2ZSH8	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_2929
+A0A0H2ZSI1	tr	Nitrate reductase alpha subunit	Mycobacterium avium (strain 104)	243243	MAV_1303
+A0A0H2ZSI9	tr	Ferredoxin, 4Fe-4S	Mycobacterium avium (strain 104)	243243	MAV_4817
+A0A0H2ZSY8	tr	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacterium avium (strain 104)	243243	MAV_0633
+A0A0H2ZSZ6	tr	Respiratory-chain NADH dehydrogenase 51 kd subunit family protein	Mycobacterium avium (strain 104)	243243	MAV_0925
+A0A0H2ZT05	tr	Oxidoreductase, FAD-binding domain protein	Mycobacterium avium (strain 104)	243243	MAV_5168
+A0A0H2ZT43	tr	NADH-quinone oxidoreductase subunit F	Mycobacterium avium (strain 104)	243243	nuoF
+A0A0H2ZT54	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0707
+A0A0H2ZTD7	tr	NADH-quinone oxidoreductase	Mycobacterium avium (strain 104)	243243	MAV_4039
+A0A0H2ZTJ7	tr	Rieske [2Fe-2S] domain, putative	Mycobacterium avium (strain 104)	243243	MAV_0928
+A0A0H2ZTK5	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_4414
+A0A0H2ZTT9	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_2150
+A0A0H2ZTU9	tr	ferredoxin--NADP(+) reductase	Mycobacterium avium (strain 104)	243243	MAV_1015
+A0A0H2ZU93	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium avium (strain 104)	243243	ispG
+A0A0H2ZUA0	tr	Type-4 uracil-DNA glycosylase	Mycobacterium avium (strain 104)	243243	MAV_4094
+A0A0H2ZUB2	tr	FAD dependent oxidoreductase domain protein	Mycobacterium avium (strain 104)	243243	MAV_2749
+A0A0H2ZUE4	tr	FO synthase	Mycobacterium avium (strain 104)	243243	MAV_1312
+A0A0H2ZUJ0	tr	2Fe-2S iron-sulfur cluster binding domain protein	Mycobacterium avium (strain 104)	243243	MAV_4193
+A0A0H2ZUN6	tr	FdxB protein	Mycobacterium avium (strain 104)	243243	MAV_0862
+A0A0H2ZUR7	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_5278
+A0A0H2ZUW6	tr	Hydrogenase-4, I subunit, putative	Mycobacterium avium (strain 104)	243243	MAV_5114
+A0A0H2ZUY4	tr	Heme chaperone HemW	Mycobacterium avium (strain 104)	243243	MAV_1789
+A0A0H2ZV00	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0915
+A0A0H2ZV88	tr	D-3-phosphoglycerate dehydrogenase	Mycobacterium avium (strain 104)	243243	serA
+A0A0H2ZVG0	tr	Phthalate dioxygenase large subunit	Mycobacterium avium (strain 104)	243243	MAV_3509
+A0A0H2ZVH0	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_1644
+A0A0H2ZVH3	tr	NADH-quinone oxidoreductase subunit E	Mycobacterium avium (strain 104)	243243	MAV_4037
+A0A0H2ZVT4	tr	cholesterol 7-desaturase	Mycobacterium avium (strain 104)	243243	MAV_3666
+A0A0H2ZVW6	tr	Conserved domain protein	Mycobacterium avium (strain 104)	243243	MAV_1396
+A0A0H2ZW10	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium avium (strain 104)	243243	MAV_1787
+A0A0H2ZW94	tr	Type-5 uracil-DNA glycosylase	Mycobacterium avium (strain 104)	243243	MAV_1407
+A0A0H2ZWI2	tr	Rieske 2Fe-2S family protein	Mycobacterium avium (strain 104)	243243	MAV_0200
+A0A0H2ZWL4	tr	Rieske domain-containing protein	Mycobacterium avium (strain 104)	243243	MAV_2683
+A0A0H2ZWL5	tr	succinate dehydrogenase	Mycobacterium avium (strain 104)	243243	MAV_4300
+A0A0H2ZWN9	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium avium (strain 104)	243243	MAV_2154
+A0A0H2ZX44	tr	Oxidoreductase	Mycobacterium avium (strain 104)	243243	MAV_3669
+A0A0H2ZXD5	tr	Molybdopterin oxidoreductase Fe4S4 domain family protein	Mycobacterium avium (strain 104)	243243	MAV_4983
+A0A0H2ZXV6	tr	DUF779 domain-containing protein	Mycobacterium avium (strain 104)	243243	MAV_4690
+A0A0H2ZXW6	tr	Dioxygenase large subunit	Mycobacterium avium (strain 104)	243243	MAV_2612
+A0A0H2ZY53	tr	Bacterioferritin-associated ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0974
+A0A0H2ZYA7	tr	HesB/YadR/YfhF family protein	Mycobacterium avium (strain 104)	243243	MAV_2287
+A0A0H2ZYC3	tr	Glutamate synthases, NADH/NADPH, small subunit	Mycobacterium avium (strain 104)	243243	gltD
+A0A0H2ZYN8	tr	Rieske-type oxygenase	Mycobacterium avium (strain 104)	243243	MAV_3037
+A0A0H2ZYP8	tr	cholesterol 7-desaturase	Mycobacterium avium (strain 104)	243243	MAV_1638
+A0A0H2ZYX2	tr	Transcriptional regulator WhiB	Mycobacterium avium (strain 104)	243243	whiB
+A0A0H2ZYZ5	tr	Endonuclease III	Mycobacterium avium (strain 104)	243243	nth
+A0A0H2ZZ20	tr	cholesterol 7-desaturase	Mycobacterium avium (strain 104)	243243	MAV_1603
+A0A0H2ZZB4	tr	Bacterioferritin-associated ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_2834
+A0A0H2ZZC4	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_3508
+A0A0H2ZZJ4	tr	Nitrate reductase, beta subunit	Mycobacterium avium (strain 104)	243243	narH
+A0A0H2ZZL0	tr	Nitrate reductase NarB	Mycobacterium avium (strain 104)	243243	MAV_4535
+A0A0H2ZZN6	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_2592
+A0A0H2ZZR3	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0924
+A0A0H2ZZR8	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0653
+A0A0H2ZZX7	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_1876
+A0A0H3A027	tr	Formate dehydrogenase, alpha subunit	Mycobacterium avium (strain 104)	243243	MAV_0422
+A0A0H3A064	tr	NADH ubiquinone oxidoreductase, 20 kDa subunit	Mycobacterium avium (strain 104)	243243	MAV_2681
+A0A0H3A065	tr	2Fe-2S iron-sulfur cluster binding domain protein	Mycobacterium avium (strain 104)	243243	MAV_3963
+A0A0H3A087	tr	Rieske-type oxygenase	Mycobacterium avium (strain 104)	243243	MAV_1857
+A0A0H3A093	tr	4Fe-4S binding domain protein	Mycobacterium avium (strain 104)	243243	MAV_0423
+A0A0H3A0C9	tr	Conserved domain protein	Mycobacterium avium (strain 104)	243243	MAV_3401
+A0A0H3A0E8	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_1316
+A0A0H3A0H0	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0888
+A0A0H3A0J0	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium avium (strain 104)	243243	MAV_0590
+A0A0H3A0J5	tr	assimilatory sulfite reductase (NADPH)	Mycobacterium avium (strain 104)	243243	MAV_2075
+A0A0H3A0R6	tr	MmgE/PrpD family protein	Mycobacterium avium (strain 104)	243243	MAV_1742
+A0A0H3A0S3	tr	Adenine DNA glycosylase	Mycobacterium avium (strain 104)	243243	MAV_0563
+A0A0H3A0T5	tr	Oxidoreductase	Mycobacterium avium (strain 104)	243243	MAV_4119
+A0A0H3A0V5	tr	Methylesterase	Mycobacterium avium (strain 104)	243243	MAV_3891
+A0A0H3A0W6	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0941
+A0A0H3A0X9	tr	Transcription factor WhiB	Mycobacterium avium (strain 104)	243243	MAV_0447
+A0A0H3A1A1	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium avium (strain 104)	243243	nirB
+A0A0H3A1F4	tr	3-isopropylmalate dehydratase large subunit	Mycobacterium avium (strain 104)	243243	MAV_1740
+A0A0H3A1S2	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_0848
+A0A0H3A201	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_1116
+A0A0H3A230	tr	Succinate dehydrogenase	Mycobacterium avium (strain 104)	243243	MAV_4910
+A0A0H3A2A5	tr	cholesterol 7-desaturase	Mycobacterium avium (strain 104)	243243	MAV_2544
+A0A0H3A2H5	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_3961
+A0A0H3A2J1	tr	Radical SAM domain protein	Mycobacterium avium (strain 104)	243243	MAV_3456
+A0A0H3A2Q1	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_0905
+A0A0H3A2U5	tr	Aconitate hydratase A	Mycobacterium avium (strain 104)	243243	acnA
+A0A0H3A3D7	tr	Conserved domain protein	Mycobacterium avium (strain 104)	243243	MAV_1949
+A0A0H3A3F5	tr	Ferredoxin	Mycobacterium avium (strain 104)	243243	MAV_1636
+A0A0H3A3F7	tr	Dioxygenase large subunit	Mycobacterium avium (strain 104)	243243	MAV_1901
+A0A0H3A3R8	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium avium (strain 104)	243243	MAV_2297
+A0A0H3A3V2	tr	ferredoxin--NADP(+) reductase	Mycobacterium avium (strain 104)	243243	MAV_5072
+A0A0H3A3X2	tr	Transcriptional regulator WhiB	Mycobacterium avium (strain 104)	243243	whiB
+A0A0H3A4E6	tr	Molybdopterin oxidoreductase Fe4S4 region	Mycobacterium avium (strain 104)	243243	MAV_0421
+A0A0H3A669	tr	Rieske [2Fe-2S] domain protein	Mycobacterium avium (strain 104)	243243	MAV_5207
+A0A0H3M0L9	tr	L-serine dehydratase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	sdaA
+A0A0H3M0M9	tr	Probable oxidoreductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0115
+A0A0H3M125	tr	Nitrite reductase (NADH) small subunit	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nirD
+A0A0H3M1A4	tr	Iron-sulfur-binding reductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0377c
+A0A0H3M1Q4	tr	Probable succinate dehydrogenase [iron-sulfur subunit]	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0285c
+A0A0H3M1Q9	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nirB
+A0A0H3M2A1	tr	DUF779 domain-containing protein	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0499
+A0A0H3M2A9	tr	Possible ferredoxin	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0815c
+A0A0H3M2M5	tr	Probable ferredoxin/ferredoxin--NADP reductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fprB
+A0A0H3M2T1	tr	Possible methyltransferase (Methylase)	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0250c
+A0A0H3M3A5	tr	Probable carbon monoxyde dehydrogenase (Small chain)	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0412c
+A0A0H3M3V5	tr	Probable biotin sulfoxide reductase bisC	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	bisC
+A0A0H3M495	tr	Probable NADPH dependent 2,4-dienoyl-CoA reductase fadH	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fadH
+A0A0H3M4Q3	tr	Ferredoxin	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_1818
+A0A0H3M533	tr	Possible oxygenase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_1976
+A0A0H3M5B0	tr	2-methylcitrate dehydratase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_1191
+A0A0H3M5B6	tr	Possible cobalamin biosynthesis protein CobG	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	cobG
+A0A0H3M5D7	tr	Probable respiratory nitrate reductase (Beta chain) narH	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	narH
+A0A0H3M5E8	tr	FO synthase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fbiC
+A0A0H3M648	tr	Aconitate hydratase A	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	acn
+A0A0H3M661	tr	Ferredoxin	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fdxA
+A0A0H3M6C5	tr	Fumarate reductase subunit C	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	frdBC
+A0A0H3M745	tr	Sulfite reductase [ferredoxin]	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nirA
+A0A0H3M819	tr	Core domain-containing protein	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_2220c
+A0A0H3M8A5	tr	NADH-quinone oxidoreductase subunit E	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nuoE
+A0A0H3M8B9	tr	Possible dioxygenase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_3185c
+A0A0H3M8E7	tr	Transcriptional regulator WhiB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	whiB7
+A0A0H3M8J2	tr	Transcriptional regulator WhiB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	whiB2
+A0A0H3M8M9	tr	Mycofactocin maturase MftC	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	pqqE
+A0A0H3M8P8	tr	succinate dehydrogenase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	sdhB
+A0A0H3M913	tr	Radical SAM core domain-containing protein	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_2601c
+A0A0H3M9K4	tr	Probable oxidoreductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_2793c
+A0A0H3M9P5	tr	Nitrate reductase alpha subunit	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	narG
+A0A0H3M9P9	tr	Ferredoxin	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fdxD
+A0A0H3M9Q1	tr	Transcriptional regulator WhiB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	whiB4
+A0A0H3M9R0	tr	Ferredoxin	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fdxC
+A0A0H3M9Y9	tr	Adenine DNA glycosylase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	mutY
+A0A0H3MA06	tr	Possible oxidoreductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_0234
+A0A0H3MAD1	tr	GTP 3',8-cyclase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	moaA1
+A0A0H3MAG5	tr	Probable pyruvate formate lyase activating protein pflA	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	pflA
+A0A0H3MAH2	tr	NADH-quinone oxidoreductase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nuoG
+A0A0H3MAS6	tr	Rieske domain-containing protein	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_3880
+A0A0H3MAX9	tr	GTP 3',8-cyclase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	moaA3
+A0A0H3MB73	tr	Transcriptional regulator WhiB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	whiB3
+A0A0H3MBB3	tr	GTP 3',8-cyclase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	moaA2
+A0A0H3MBE7	tr	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_3590
+A0A0H3MBP5	tr	Endonuclease III	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nth
+A0A0H3MC72	tr	NADH-dependent glutamate synthase (Small subunit) gltD	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	gltD
+A0A0H3MCD6	tr	Uncharacterized protein	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_2352
+A0A0H3MCE7	tr	Type-5 uracil-DNA glycosylase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_1317
+A0A0H3MCI6	tr	Heme chaperone HemW	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	hemN
+A0A0H3MDL2	tr	Possible molybdopterin biosynthesis protein moeX	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	moeX
+A0A0H3MDL8	tr	Possible formate dehydrogenase H fdhF	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fdhF
+A0A0H3MDR9	tr	D-3-phosphoglycerate dehydrogenase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	serA1
+A0A0H3MDS9	tr	Nitrate reductase-like protein NarX	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	narX
+A0A0H3ME32	tr	NADH-quinone oxidoreductase subunit F	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nuoF
+A0A0H3MEW8	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	qcrA
+A0A0H3MF45	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	hmp
+A0A0H3MIF5	tr	Possible electron transfer protein fdxB	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	fdxB
+A0A0H3MJ00	tr	Possible transferase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	BCG_3789
+A0A0H3MP18	tr	NADH-dependent glutamate synthase small subunit	Mycobacterium leprae (strain Br4923)	561304	gltD
+A0A0H3MP61	tr	Ferredoxin-dependent glutamate synthase	Mycobacterium leprae (strain Br4923)	561304	gltB
+A0A0H3MPM9	tr	MarR-family transcriptional regulator	Mycobacterium leprae (strain Br4923)	561304	MLBr00550
+A0A0H3MPR7	tr	Cysteine desulfurase	Mycobacterium leprae (strain Br4923)	561304	MLBr00596
+A0A0H3MPV0	tr	succinate dehydrogenase	Mycobacterium leprae (strain Br4923)	561304	sdhB
+A0A0H3MPV2	tr	Transcriptional regulator WhiB	Mycobacterium leprae (strain Br4923)	561304	whiB2
+A0A0H3MPZ6	tr	cysteine desulfurase	Mycobacterium leprae (strain Br4923)	561304	MLBr00842
+A0A0H3MQ11	tr	Core domain-containing protein	Mycobacterium leprae (strain Br4923)	561304	MLBr00871
+A0A0H3MQ23	tr	Cytochrome bc1 complex cytochrome c subunit	Mycobacterium leprae (strain Br4923)	561304	qcrC
+A0A0H3MQJ0	tr	PD-(D/E)XK endonuclease-like domain-containing protein	Mycobacterium leprae (strain Br4923)	561304	MLBr01312
+A0A0H3MQJ8	tr	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacterium leprae (strain Br4923)	561304	miaB
+A0A0H3MQQ7	tr	Ferredoxin	Mycobacterium leprae (strain Br4923)	561304	fdxA
+A0A0H3MR08	tr	Possible regulatory protein	Mycobacterium leprae (strain Br4923)	561304	MLBr01367
+A0A0H3MRA8	tr	Adenine DNA glycosylase	Mycobacterium leprae (strain Br4923)	561304	mutY
+A0A0H3MRC2	tr	D-3-phosphoglycerate dehydrogenase	Mycobacterium leprae (strain Br4923)	561304	serA
+A0A0H3MRD1	tr	cysteine desulfurase	Mycobacterium leprae (strain Br4923)	561304	MLBr01708
+A0A0H3MRF5	tr	L-serine dehydratase	Mycobacterium leprae (strain Br4923)	561304	sdaA
+A0A0H3MRI1	tr	Aconitate hydratase A	Mycobacterium leprae (strain Br4923)	561304	acn
+A0A0H3MRK2	tr	ferredoxin--NADP(+) reductase	Mycobacterium leprae (strain Br4923)	561304	fprB
+A0A0H3MRN0	tr	Thiredoxin	Mycobacterium leprae (strain Br4923)	561304	thiX
+A0A0H3MRU9	tr	Transcriptional regulator WhiB	Mycobacterium leprae (strain Br4923)	561304	whiB
+A0A0H3MRZ7	tr	Amidophosphoribosyltransferase	Mycobacterium leprae (strain Br4923)	561304	purF
+A0A0H3MS59	tr	Endonuclease III	Mycobacterium leprae (strain Br4923)	561304	nth
+A0A0H3MSC1	tr	Cell division protein	Mycobacterium leprae (strain Br4923)	561304	parA
+A0A0H3MUA9	tr	NIF system FeS cluster assembly NifU N-terminal domain-containing protein	Mycobacterium leprae (strain Br4923)	561304	MLBr00597
+A0A0H3MUJ0	tr	Transcriptional regulator WhiB	Mycobacterium leprae (strain Br4923)	561304	whiB1
+A0A0H3MUM7	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium leprae (strain Br4923)	561304	qcrA
+A0A0H3MUW8	tr	Iron-sulfur cluster carrier protein	Mycobacterium leprae (strain Br4923)	561304	mrp
+A0A0H3MUY1	tr	Type-5 uracil-DNA glycosylase	Mycobacterium leprae (strain Br4923)	561304	MLBr01105
+A0A0H3MVE0	tr	FO synthase	Mycobacterium leprae (strain Br4923)	561304	MLBr01492
+A0A0H3MVL2	tr	3-isopropylmalate dehydratase large subunit	Mycobacterium leprae (strain Br4923)	561304	leuC
+A0A0H3MVV0	tr	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	Mycobacterium leprae (strain Br4923)	561304	lytB2
+A0A0H3MW44	tr	Uncharacterized protein	Mycobacterium leprae (strain Br4923)	561304	MLBr02203
+A0A0H3MWJ8	tr	Probable iron-sulphur-binding reductase	Mycobacterium leprae (strain Br4923)	561304	MLBr02501
+A0A0H3MYA5	tr	Transcriptional regulator WhiB	Mycobacterium leprae (strain Br4923)	561304	whiB3
+A0A0H3MYB0	tr	Cholesterol oxidase	Mycobacterium leprae (strain Br4923)	561304	choD
+A0A0H3MYK2	tr	SUF system FeS cluster assembly SufBD core domain-containing protein	Mycobacterium leprae (strain Br4923)	561304	MLBr00594
+A0A0H3MYL8	tr	Transcriptional regulator WhiB	Mycobacterium leprae (strain Br4923)	561304	whiB7
+A0A0H3N034	tr	Glutaredoxin-like protein NrdH	Mycobacterium leprae (strain Br4923)	561304	nrdH
+A0A0H3N0B3	tr	DNA-directed RNA polymerase subunit alpha	Mycobacterium leprae (strain Br4923)	561304	rpoA
+A0A0H3N0U4	tr	Probable anion transporter protein	Mycobacterium leprae (strain Br4923)	561304	MLBr02305
+A0A0H3N167	tr	Dihydroxy-acid dehydratase	Mycobacterium leprae (strain Br4923)	561304	ilvD
+A0PKD5	tr	Glycosylase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0027
+A0PKK8	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS	Mycobacterium ulcerans (strain Agy99)	362242	coxS
+A0PKY0	tr	ferredoxin--NADP(+) reductase	Mycobacterium ulcerans (strain Agy99)	362242	fprB
+A0PKZ7	sp	GTP 3',8-cyclase	Mycobacterium ulcerans (strain Agy99)	362242	moaA
+A0PL17	tr	Bacterioferritin-associated ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0303
+A0PL27	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0316
+A0PL41	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0334
+A0PL66	tr	Electron transfer protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0363
+A0PLE5	tr	Carbon monoxide dehydrogenase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0459
+A0PLF6	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0472
+A0PLN7	tr	Iron-sulphur-binding reductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_0574
+A0PM49	sp	Mycofactocin maturase MftC	Mycobacterium ulcerans (strain Agy99)	362242	mftC
+A0PMF5	tr	Transcriptional regulator WhiB	Mycobacterium ulcerans (strain Agy99)	362242	whiB3
+A0PMQ9	tr	FO synthase	Mycobacterium ulcerans (strain Agy99)	362242	fbiC
+A0PMR4	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	fdxC
+A0PN31	tr	Succinate dehydrogenase (Iron-sulfur subunit), SdhB_1	Mycobacterium ulcerans (strain Agy99)	362242	sdhB_1
+A0PN38	tr	Nitrite reductase (NADH) small subunit	Mycobacterium ulcerans (strain Agy99)	362242	nirD
+A0PNH7	sp	Lipoyl synthase	Mycobacterium ulcerans (strain Agy99)	362242	lipA
+A0PNJ7	tr	succinate dehydrogenase	Mycobacterium ulcerans (strain Agy99)	362242	sdhB
+A0PNN7	tr	DUF779 domain-containing protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_1417
+A0PNS8	tr	assimilatory sulfite reductase (NADPH)	Mycobacterium ulcerans (strain Agy99)	362242	fdhF
+A0PNT7	tr	Aconitate hydratase A	Mycobacterium ulcerans (strain Agy99)	362242	acn
+A0PP05	sp	Biotin synthase	Mycobacterium ulcerans (strain Agy99)	362242	bioB
+A0PPE9	tr	Radical SAM core domain-containing protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_1734
+A0PPT3	tr	Oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_1891
+A0PPY5	tr	D-3-phosphoglycerate dehydrogenase	Mycobacterium ulcerans (strain Agy99)	362242	serA1
+A0PPZ6	sp	3-isopropylmalate dehydratase large subunit	Mycobacterium ulcerans (strain Agy99)	362242	leuC
+A0PQ89	sp	Probable dual-specificity RNA methyltransferase RlmN	Mycobacterium ulcerans (strain Agy99)	362242	rlmN
+A0PQ97	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium ulcerans (strain Agy99)	362242	ispG
+A0PQF4	tr	Oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2159
+A0PQF6	tr	cholesterol 7-desaturase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2161
+A0PQP7	tr	Cobalamin biosynthesis protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2288
+A0PQQ5	tr	Precorrin-4 C11-methyltransferase, CobM	Mycobacterium ulcerans (strain Agy99)	362242	cobM
+A0PR39	sp	NADH-quinone oxidoreductase subunit B	Mycobacterium ulcerans (strain Agy99)	362242	nuoB
+A0PR42	tr	NADH-quinone oxidoreductase subunit E	Mycobacterium ulcerans (strain Agy99)	362242	nuoE
+A0PR43	tr	NADH-quinone oxidoreductase subunit F	Mycobacterium ulcerans (strain Agy99)	362242	nuoF
+A0PR44	tr	NADH-quinone oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	nuoG
+A0PR46	sp	NADH-quinone oxidoreductase subunit I	Mycobacterium ulcerans (strain Agy99)	362242	nuoI
+A0PR72	tr	2-methylcitrate dehydratase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2496
+A0PR85	tr	Transcriptional regulator WhiB	Mycobacterium ulcerans (strain Agy99)	362242	whiB7
+A0PRB5	tr	Transcriptional regulator WhiB	Mycobacterium ulcerans (strain Agy99)	362242	whiB1
+A0PRD9	tr	Oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2566
+A0PRG7	tr	Transcriptional regulator WhiB	Mycobacterium ulcerans (strain Agy99)	362242	whiB2
+A0PRP8	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	fdxC_1
+A0PS37	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2873
+A0PS49	tr	Oxygenase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2889
+A0PS54	tr	Conserved hypothetical oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2895
+A0PSC8	tr	Bacterioferritin-associated ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_2994
+A0PSL5	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3090
+A0PSR0	tr	Dehydrogenase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3154
+A0PSZ9	tr	Transcriptional regulator	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3263
+A0PT00	tr	Ferredoxin	Mycobacterium ulcerans (strain Agy99)	362242	fdxA_1
+A0PT87	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacterium ulcerans (strain Agy99)	362242	miaB
+A0PTM9	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium ulcerans (strain Agy99)	362242	qcrA
+A0PTN8	tr	Conserved protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3561
+A0PTW4	tr	Heme chaperone HemW	Mycobacterium ulcerans (strain Agy99)	362242	hemN
+A0PTW5	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium ulcerans (strain Agy99)	362242	nirA_2
+A0PU96	tr	Ring-hydroxylating dioxygenase, large terminal subunit	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3820
+A0PUA3	tr	cholesterol 7-desaturase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_3829
+A0PUA4	tr	Ferredoxin FdxD_1	Mycobacterium ulcerans (strain Agy99)	362242	fdxD_1
+A0PUU8	tr	Ferredoxin FdxD	Mycobacterium ulcerans (strain Agy99)	362242	fdxD
+A0PUW6	tr	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacterium ulcerans (strain Agy99)	362242	MUL_4089
+A0PUZ2	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium ulcerans (strain Agy99)	362242	fdxB
+A0PV13	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium ulcerans (strain Agy99)	362242	hmp
+A0PV35	tr	Adenine DNA glycosylase	Mycobacterium ulcerans (strain Agy99)	362242	mutY
+A0PVA7	tr	Endonuclease III	Mycobacterium ulcerans (strain Agy99)	362242	nth
+A0PVB5	tr	Transcriptional regulatory protein Whib-like WhiB4	Mycobacterium ulcerans (strain Agy99)	362242	whiB4
+A0PVT5	tr	Type-5 uracil-DNA glycosylase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_4483
+A0PW12	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS_1	Mycobacterium ulcerans (strain Agy99)	362242	coxS_1
+A0PWE2	tr	NAD(P) transhydrogenase subunit alpha part 1	Mycobacterium ulcerans (strain Agy99)	362242	pntAa
+A0PWI2	tr	Flavodoxin oxidoreductase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_4786
+A0PWR0	tr	Dioxygenase	Mycobacterium ulcerans (strain Agy99)	362242	MUL_4884
+A0PWS3	tr	L-serine dehydratase	Mycobacterium ulcerans (strain Agy99)	362242	sdaA
+A0PX09	tr	Rieske domain-containing protein	Mycobacterium ulcerans (strain Agy99)	362242	MUL_5001
+A0PX41	tr	NADH-dependent glutamate synthase (Small subunit) GltD	Mycobacterium ulcerans (strain Agy99)	362242	gltD
+A0QEY6	sp	Lipoyl synthase	Mycobacterium avium (strain 104)	243243	lipA
+A0QHJ1	sp	Biotin synthase	Mycobacterium avium (strain 104)	243243	bioB
+A0QIR4	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacterium avium (strain 104)	243243	miaB
+A0QJB7	sp	3-isopropylmalate dehydratase large subunit	Mycobacterium avium (strain 104)	243243	leuC
+A0QJU8	sp	NADH-quinone oxidoreductase subunit B	Mycobacterium avium (strain 104)	243243	nuoB
+A0QJV5	sp	NADH-quinone oxidoreductase subunit I	Mycobacterium avium (strain 104)	243243	nuoI
+A0QNT7	tr	Formate dehydrogenase, gamma subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0159
+A0QNT8	tr	Formate dehydrogenase, beta subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0160
+A0QNT9	tr	Formate dehydrogenase, alpha subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0161
+A0QP43	tr	Type-4 uracil-DNA glycosylase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0265
+A0QP70	tr	Rieske [2Fe-2S] domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0293
+A0QP72	tr	Oxidoreductase, FAD-binding	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0295
+A0QP76	tr	Rieske [2Fe-2S] domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0299
+A0QPJ2	tr	Succinate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0417
+A0QPK2	tr	assimilatory sulfite reductase (ferredoxin)	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nirB
+A0QPK3	tr	Nitrite reductase [NAD(P)H] small subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0428
+A0QPZ1	tr	Radical SAM domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0568
+A0QQ17	tr	Iron-sulfur cluster binding protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0594
+A0QQ59	tr	Iron-sulfur binding oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0637
+A0QQ78	tr	Rieske 2Fe-2S domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0657
+A0QQA6	tr	Oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0686
+A0QQB0	tr	Iron-sulfur cluster-binding protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0690
+A0QQF2	tr	Rieske-type oxygenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0734
+A0QQG3	tr	[2Fe-2S] binding domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0745
+A0QQJ4	sp	F420-dependent glucose-6-phosphate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	fgd
+A0QQT7	tr	Twin-arginine translocation pathway signal	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0872
+A0QQW6	tr	DUF779 domain-containing protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_0901
+A0QRD9	tr	Rieske domain-containing protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1081
+A0QRG9	tr	Aconitate hydratase, putative	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1112
+A0QRI0	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1124
+A0QRZ3	tr	Oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1291
+A0QSB8	sp	Mycofactocin maturase MftC	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	mftC
+A0QSF3	tr	Rieske [2Fe-2S] domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1459
+A0QSF6	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1462
+A0QST8	sp	Redox-responsive transcriptional regulator WhiB3	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	whiB3
+A0QT07	tr	succinate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	sdhB
+A0QT76	tr	Oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1742
+A0QTG3	sp	Transcriptional regulator WhiB2	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	whiB2
+A0QTH8	tr	4Fe-4S ferredoxin, iron-sulfur binding protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1847
+A0QTL3	tr	2Fe-2S iron-sulfur cluster binding domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1885
+A0QTN4	tr	Toluate 1,2-dioxygenase electron transfer component	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1906
+A0QTN6	tr	Benzoate 1,2-dioxygenase alpha subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1908
+A0QTP7	tr	Transcriptional regulator WhiB	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	whiB
+A0QTT1	sp	Transcriptional regulator WhiB7	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	whiB7
+A0QTU9	sp	Propane 2-monooxygenase, reductase component	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	mimB
+A0QTW5	tr	Phenoxybenzoate dioxygenase beta subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_1989
+A0QU28	sp	NADH-quinone oxidoreductase subunit I	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nuoI
+A0QU30	tr	NADH-quinone oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nuoG
+A0QU31	tr	NADH-quinone oxidoreductase subunit F	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nuoF
+A0QU32	tr	NADH-quinone oxidoreductase chain e	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2059
+A0QU35	sp	NADH-quinone oxidoreductase subunit B	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nuoB
+A0QUK1	tr	Anaerobic dehydrogenase, typically	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2237
+A0QUK8	tr	cholesterol 7-desaturase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2244
+A0QUM6	tr	Hydrogenase-2, small subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	hybA
+A0QUN2	tr	Rieske domain-containing protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2268
+A0QUV0	tr	Methylesterase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2343
+A0QUY2	tr	D-3-phosphoglycerate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	serA
+A0QUY9	tr	3-isopropylmalate dehydratase large subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	leuC
+A0QV66	tr	[2Fe-2S] binding domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2464
+A0QV92	tr	D-lactate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2492
+A0QVA6	tr	3-isopropylmalate dehydratase large subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2505
+A0QVE4	sp	Probable dual-specificity RNA methyltransferase RlmN	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	rlmN
+A0QVH9	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	ispG
+A0QVM0	sp	Proline--tRNA ligase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	proS
+A0QVW4	tr	Iron-sulfur cluster-binding protein, Rieske family protein, putative	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2718
+A0QVW6	tr	NADH ubiquinone oxidoreductase, 20 kDa subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2720
+A0QVX5	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	miaB
+A0QVY3	tr	Biotin sulfoxide reductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2738
+A0QW69	tr	Nitrate reductase NarB	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2837
+A0QWC5	tr	Oxidoreductase, NAD/FAD-binding	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2893
+A0QWH5	sp	Holliday junction branch migration complex subunit RuvA	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	ruvA
+A0QWL6	tr	Fumarate hydratase class I	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2985
+A0QWM0	tr	Fe-S protein, radical SAM family protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_2990
+A0QWQ5	sp	Putative pre-16S rRNA nuclease	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3026
+A0QWW6	tr	Deoxyribose-phosphate aldolase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	deoC
+A0QX20	sp	Aconitate hydratase A	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	acnA
+A0QX70	sp	Biotin synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	bioB
+A0QXA2	tr	Glutamate synthase, NADH/nadph, small subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3226
+A0QXV6	tr	L-serine dehydratase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	sdaA
+A0QXY0	tr	Alcohol dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3464
+A0QY36	tr	Molybdopterin oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3521
+A0QY82	tr	Bacterioferritin-associated ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3568
+A0QYJ1	tr	Phenoxybenzoate dioxygenase beta subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3676
+A0QYN3	tr	PqqA peptide cyclase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	pqqE
+A0QZ24	tr	Precorrin-3B synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	cobG
+A0QZ80	tr	[NiFe] hydrogenase, delta subunit, putative	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3929
+A0QZ82	tr	[NiFe] hydrogenase, beta subunit, putative	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_3931
+A0QZF7	tr	Vanillate O-demethylase oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4009
+A0QZR8	tr	MmgE/PrpD N-terminal domain-containing protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4124
+A0QZU3	tr	Conserved domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4151
+A0QZU4	tr	Phenoxybenzoate dioxygenase beta subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4152
+A0R051	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4262
+A0R061	tr	HesB/YadR/YfhF family protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4272
+A0R075	sp	Lipoyl synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	lipA
+A0R0V9	tr	Heme chaperone HemW	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4525
+A0R0W1	tr	assimilatory sulfite reductase (ferredoxin)	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4527
+A0R163	tr	Vanillate O-demethylase oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4638
+A0R193	tr	Oxidoreductase alpha (Molybdopterin) subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4668
+A0R1M0	tr	Conserved domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4802
+A0R1P0	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4822
+A0R1Q8	tr	Rieske [2Fe-2S] domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4840
+A0R1S5	tr	Conserved domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4857
+A0R1U5	tr	2Fe-2S iron-sulfur cluster binding domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_4878
+A0R200	sp	ATP synthase subunit beta	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	atpD
+A0R203	sp	ATP synthase subunit b-delta	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	atpFH
+A0R204	sp	ATP synthase subunit b	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	atpF
+A0R211	sp	Decaprenyl-phosphate N-acetylglucosaminephosphotransferase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	wecA
+A0R287	tr	T/U mismatch-specific DNA glycosylase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5024
+A0R294	tr	Type-5 uracil-DNA glycosylase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5031
+A0R2G2	tr	Pyruvate ferredoxin/flavodoxin oxidoreductase family protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5100
+A0R2I1	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5122
+A0R2I2	tr	2,4-dienoyl-coA reductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5124
+A0R2I4	tr	FO synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5126
+A0R2J7	tr	Nitrate reductase, beta subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	narH
+A0R2J8	tr	Nitrate reductase alpha subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5140
+A0R3B3	tr	Radical SAM domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5410
+A0R3D4	tr	4Fe-4S binding domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5433
+A0R3N2	tr	4Fe-4S ferredoxin, iron-sulfur binding	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5533
+A0R3U0	tr	Pyruvate dehydrogenase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5593
+A0R3U1	tr	Ferredoxin-dependent glutamate synthase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5594
+A0R3X3	tr	Rieske [2Fe-2S] domain protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5627
+A0R426	tr	ferredoxin--NADP(+) reductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5681
+A0R443	sp	GTP 3',8-cyclase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	moaA
+A0R4K3	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5864
+A0R4P2	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_5904
+A0R4R3	sp	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	kshA
+A0R525	sp	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	kshB
+A0R530	sp	HTH-type transcriptional regulator MSMEG_6044/MSMEI_5883	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6044
+A0R567	sp	Adenine DNA glycosylase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	mutY
+A0R5G9	tr	Endonuclease III	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	nth
+A0R5Z2	sp	Galactofuranosyltransferase GlfT1	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	glfT1
+A0R635	sp	Putative Rieske 2Fe-2S iron-sulfur protein MSMEG_6410/MSMEI_6242	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6410
+A0R683	tr	Glutamate synthase, small subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6458
+A0R6H2	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6548
+A0R6R6	tr	2-methylcitrate dehydratase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6645
+A0R6W4	tr	Ferredoxin	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6694
+A0R783	tr	Molybdopterin oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6816
+A0R7A2	tr	Oxidoreductase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6836
+A0R7C2	tr	MmgE/PrpD family protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	MSMEG_6856
+A1KJ05	sp	Biotin synthase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	bioB
+A1KKR0	sp	Lipoyl synthase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	lipA
+A1KM71	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	miaB
+A1KML3	sp	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	ispG
+A1KMM4	sp	Probable dual-specificity RNA methyltransferase RlmN	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	rlmN
+A1KMY2	sp	3-isopropylmalate dehydratase large subunit	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	leuC
+A1KNE2	sp	NADH-quinone oxidoreductase subunit B	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nuoB
+A1KNE9	sp	NADH-quinone oxidoreductase subunit I	Mycobacterium bovis (strain BCG / Pasteur 1173P2)	410289	nuoI
+B1MAF3	tr	Cobyrinic acid a,c-diamine synthase or chromosome partitioning protein ParA	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_p20c
+B1MAG5	tr	PD-(D/E)XK endonuclease-like domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2155c
+B1MAL0	tr	Probable cobalamin biosynthesis protein CobG	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2200c
+B1MAQ0	tr	Ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2240
+B1MAW9	tr	Transcriptional regulator	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2309c
+B1MB27	tr	AAA domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2367
+B1MB41	tr	Probable oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2381
+B1MB98	tr	assimilatory sulfite reductase (NADPH)	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2438
+B1MBD6	tr	Ferric siderophore reductase C-terminal domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2476
+B1MBE6	tr	Glutamate synthase, large subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2486c
+B1MBG3	tr	Iron-sulfur binding oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2503c
+B1MBG9	tr	Iron-binding zinc finger CDGSH type domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2509c
+B1MBY3	tr	Quinolinate synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	nadA
+B1MBZ3	sp	Biotin synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	bioB
+B1MC29	sp	Coproporphyrin III ferrochelatase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	cpfC
+B1MC38	tr	Aconitate hydratase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2730
+B1MC53	tr	Possible SUF system FeS assembly protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2745c
+B1MC54	tr	Cysteine desulfurase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2746c
+B1MC56	tr	SUF system FeS cluster assembly SufBD core domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2748c
+B1MC57	tr	FeS assembly protein SufB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2749c
+B1MCH6	tr	Radical SAM core domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2868c
+B1MCN2	tr	Xanthine dehydrogenase family protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2925c
+B1MCS3	tr	Possible hemoglobine-related protein HMP	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2966c
+B1MCT6	tr	peptide-methionine (R)-S-oxide reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2979
+B1MCZ8	tr	Biotin sulfoxide reductase BisC	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3041
+B1MD05	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	miaB
+B1MD89	tr	nitric oxide dioxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3133c
+B1MD90	tr	HTH-type transcriptional repressor nsrR	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3134c
+B1MDC5	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	ispG
+B1MDD1	tr	Probable dual-specificity RNA methyltransferase RlmN	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	rlmN
+B1MDN1	tr	Ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3274
+B1MDQ1	sp	3-isopropylmalate dehydratase large subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	leuC
+B1MDR1	tr	D-3-phosphoglycerate dehydrogenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3304c
+B1MDW3	sp	tRNA-specific 2-thiouridylase MnmA	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	mnmA
+B1MDW4	tr	cysteine desulfurase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3357c
+B1ME22	tr	Glutaredoxin-like protein NrdH	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3415c
+B1MEB6	tr	Rieske-type oxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0080c
+B1MEC4	tr	Oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0088c
+B1MEC7	tr	Ferredoxin-dependent glutamate synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0091
+B1MEC8	tr	Probable NADH-dependent glutamate synthase (Small subunit) GltD	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0092
+B1MEG3	tr	Ferritin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0127c
+B1MEJ2	tr	Iron-sulfur cluster-binding protein, RIESKE family	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0156c
+B1MEQ3	tr	cysteine desulfurase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0217c
+B1MER6	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MEX8	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MEY2	tr	Glutaredoxin-like protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3512
+B1MEY6	tr	DNA 3'-5' helicase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3516c
+B1MEZ1	tr	Probable nitrite reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3521c
+B1MEZ2	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3522c
+B1MF03	tr	Cobyrinic acid a,c-diamide synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3533c
+B1MF09	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MF19	tr	Oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3549c
+B1MF66	tr	Rubredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3597c
+B1MF75	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MF95	tr	Rieske-type oxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3627c
+B1MFV8	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MFW0	tr	Anion transporter ATPase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0411c
+B1MFW7	tr	Endonuclease III	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	nth
+B1MG05	tr	succinate dehydrogenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3676
+B1MG48	tr	Cholesterol oxidase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3719c
+B1MG55	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MG99	tr	DNA-directed RNA polymerase subunit alpha	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	rpoA
+B1MGG4	tr	Mycofactocin maturase MftC	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3835c
+B1MGS7	tr	Probable aminotransferase/cysteine desulfurase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0512
+B1MGX2	tr	Adenine DNA glycosylase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0558c
+B1MGZ7	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0583c
+B1MH63	tr	Probable molybdopterin oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3870c
+B1MHB1	tr	Oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3918c
+B1MHI7	tr	Glutaredoxin family protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_3994c
+B1MHL3	tr	Probable oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4020c
+B1MHY7	tr	Amidophosphoribosyltransferase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	purF
+B1MI00	tr	Rieske-type oxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0726
+B1MI04	tr	tRNA-modifying protein ygfZ	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0730c
+B1MI16	tr	Probable thioredoxin ThiX	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0742c
+B1MIK9	tr	Probable ferredoxin FdxD	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4157c
+B1MIM5	tr	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4173
+B1MIP8	sp	Phosphomethylpyrimidine synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	thiC
+B1MIX1	tr	nitric oxide dioxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4269
+B1MIZ5	tr	Fe-S oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4293
+B1MJ09	tr	GTP 3',8-cyclase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	moaA
+B1MJ29	tr	HTH-type transcriptional regulator MarR	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0891c
+B1MJ48	tr	Phenylacetic acid degradation protein PaaE/phenylacetate-CoA oxygenase/reductase, PaaK subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0910
+B1MJ52	tr	Probable ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0914c
+B1MJ66	tr	ferredoxin--NADP(+) reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_0930
+B1MJI4	tr	peptide-methionine (R)-S-oxide reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1050c
+B1MJQ8	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MJS1	tr	Pyruvate ferredoxin/flavodoxin oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4356c
+B1MJT3	tr	Ferredoxin subunit of phenylpropionate dioxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4369c
+B1MJT4	tr	Large terminal subunit of phenylpropionate dioxygenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4370c
+B1MJY4	tr	Succinate dehydrogenase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4421
+B1MJY6	tr	Succinate dehydrogenase, iron-sulfur subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4423
+B1MK90	tr	cysteine desulfurase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1093c
+B1MKK9	tr	Ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1213c
+B1MKM8	tr	Cholesterol oxidase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1232c
+B1MKQ3	tr	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	ispH
+B1MKW9	tr	Dihydroxy-acid dehydratase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	ilvD
+B1ML41	tr	2-methylcitrate dehydratase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4617
+B1ML64	tr	Dihydroxy-acid dehydratase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	ilvD
+B1ML77	tr	Rieske domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4653
+B1ML96	tr	Aminotransferase/cysteine desulfhydrase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4673c
+B1ML97	tr	Similarity with Nitrogen-fixing NifU-like proteins	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4674c
+B1MLI0	tr	FO synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1319
+B1MLI6	tr	Probable NADPH dependent 2,4-dienoyl-CoA reductase FadH	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1325c
+B1MLI8	tr	Ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1327
+B1MLM5	tr	Iron-sulfur cluster carrier protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1366c
+B1MLY0	tr	ATP-dependent helicase DinG	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1471c
+B1MM04	tr	Probable oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1495
+B1MMM6	tr	Ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4943c
+B1MMW1	tr	Oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1588c
+B1MMW6	tr	Probable formate dehydrogenase, A chain	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1593c
+B1MMW8	tr	Probable ferredoxin oxidoreductase, beta subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1595
+B1MN34	sp	Adenosine 5'-phosphosulfate reductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	cysH
+B1MN35	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1662c
+B1MN36	tr	Heme chaperone HemW	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1663
+B1MN92	tr	Chromosome partitioning protein/ cobyrinic acid a,c-diamide synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_4950c
+B1MNE0	tr	Transcriptional regulator WhiB	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	whiB
+B1MNX3	tr	Lipoyl synthase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	lipA
+B1MNY8	tr	Core domain-containing protein	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1957
+B1MNZ8	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1967c
+B1MNZ9	tr	Cytochrome bc1 complex cytochrome c subunit	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_1968c
+B1MP80	tr	Probable ferredoxin	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2049c
+B1MPG5	sp	NADH-quinone oxidoreductase subunit B	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	nuoB
+B1MPG8	tr	NADH-quinone oxidoreductase, E subunit NuoE	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2138
+B1MPG9	tr	NADH-quinone oxidoreductase subunit F	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2139
+B1MPH0	tr	NADH-quinone oxidoreductase	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	MAB_2140
+B1MPH2	tr	NADH-quinone oxidoreductase subunit I	Mycobacteroides abscessus (strain ATCC 19977 / DSM 44196 / CCUG 20993 / CIP 104536 / JCM 13569 / NCTC 13031 / TMC 1543 / L948)	561007	nuoI
+B2HD17	tr	Transcriptional regulator WhiB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB3
+B2HD65	tr	Bacterioferritin-associated ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2760
+B2HDE5	tr	Dioxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4422
+B2HDU2	tr	succinate dehydrogenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	sdhB
+B2HE19	tr	Conserved hypothetical oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2859
+B2HE25	tr	Oxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2865
+B2HE39	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2879
+B2HE91	tr	Ferredoxin reductase FdxD	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2932
+B2HEN3	tr	Transcriptional regulator WhiB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB2
+B2HER5	tr	Oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1314
+B2HEU0	tr	Transcriptional regulator WhiB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB1
+B2HF14	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxA_2
+B2HF63	tr	Cobalamin biosynthesis protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3044
+B2HF87	tr	ferredoxin--NADP(+) reductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fprB
+B2HFA4	sp	GTP 3',8-cyclase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	moaA
+B2HFC6	tr	Bacterioferritin-associated ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4684
+B2HFF8	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4716
+B2HFG8	tr	Rieske domain-containing protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4726
+B2HFH1	tr	NADH dehydrogenase I (Chain F) (NADH-ubiquinone oxidoreductase chain F), NuoF_1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoF_1
+B2HFH2	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4730
+B2HFH9	tr	Transcriptional regulator WhiB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB7
+B2HFJ3	tr	2-methylcitrate dehydratase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1379
+B2HFS6	tr	Precorrin-4 C11-methyltransferase, CobM	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	cobM
+B2HG26	tr	Ferredoxin FdxD_2	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxD_2
+B2HG28	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4736
+B2HG36	tr	Dioxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4744
+B2HG55	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4763
+B2HG86	tr	Electron transfer protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4794
+B2HGE0	sp	NADH-quinone oxidoreductase subunit I	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoI
+B2HGE2	tr	NADH-quinone oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoG
+B2HGE3	tr	NADH-quinone oxidoreductase subunit F	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoF
+B2HGE4	tr	NADH-quinone oxidoreductase subunit E	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoE
+B2HGE7	sp	NADH-quinone oxidoreductase subunit B	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nuoB
+B2HGN2	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase 1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	miaB1
+B2HGN6	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3155
+B2HGW3	tr	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	qcrA
+B2HGX2	tr	Conserved protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3248
+B2HH82	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4933
+B2HHH2	tr	Oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1654
+B2HHL4	sp	Lipoyl synthase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	lipA
+B2HHU9	tr	Carbon monoxide dehydrogenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4945
+B2HHZ5	tr	Ferredoxin FdxD	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxD
+B2HI19	tr	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_5015
+B2HIC7	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS_2	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	coxS_2
+B2HIE9	tr	Methyltransferase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1693
+B2HIH0	tr	D-3-phosphoglycerate dehydrogenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	serA1
+B2HII1	sp	3-isopropylmalate dehydratase large subunit	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	leuC
+B2HIS5	tr	NADH-dependent glutamate synthase (Small subunit) GltD	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	gltD_1
+B2HIS6	tr	Pyruvate ferredoxin/flavodoxin oxidoreductase family protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3408
+B2HIT4	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nirA
+B2HIT9	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxC_1
+B2HIY4	tr	Electron transfer protein FdxB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxB
+B2HJ07	tr	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	hmp
+B2HJ30	tr	Adenine DNA glycosylase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	mutY
+B2HJC2	tr	Formate dehydrogenase H	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0121
+B2HJC9	tr	Oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0128
+B2HJP3	sp	Probable dual-specificity RNA methyltransferase RlmN	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	rlmN
+B2HJQ1	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	ispG
+B2HJT1	tr	Rieske domain-containing protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1868
+B2HJT3	tr	Nickel/iron-hydrogenase I small subunit, HyaA	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	hyaA
+B2HJX5	tr	Coenzyme F420-reducing hydrogenase, gamma subunit	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3498
+B2HJX7	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3500
+B2HK71	tr	Endonuclease III	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nth
+B2HK79	sp	Transcriptional regulator WhiB4	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB4
+B2HKA2	tr	Formate dehydrogenase, alpha subunit, selenocysteine-containing	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_5194
+B2HKA3	tr	Formate dehydrogenase, beta subunit, selenocysteine-containing	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_5195
+B2HKA4	tr	Fe-S-cluster-containing hydrogenase, HybA	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	hybA
+B2HKH0	tr	L-serine dehydratase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	sdaA
+B2HKH6	tr	Conserved hypothetical oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0212
+B2HKJ4	tr	Dioxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0230
+B2HKN7	tr	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	gcpE_2
+B2HKW1	tr	Oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1933
+B2HKW3	tr	Rieske-type oxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_1935
+B2HL08	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase 2	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	miaB2
+B2HL79	tr	assimilatory sulfite reductase (NADPH)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdhF
+B2HLM5	tr	Dioxygenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0307
+B2HLQ3	tr	Flavodoxin oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0335
+B2HLU5	tr	NAD(P) transhydrogenase subunit alpha part 1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	pntAa
+B2HM66	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxA_1
+B2HM67	tr	Transcriptional regulator	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2081
+B2HMA5	tr	Heme chaperone HemW	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	hemN
+B2HMA6	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nirA_2
+B2HML6	tr	Rieske domain-containing protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_5381
+B2HMQ0	tr	NADH-dependent glutamate synthase (Small subunit) GltD	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	gltD
+B2HMW5	tr	Oxidoreductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0437
+B2HN35	tr	Succinate dehydrogenase (Iron-sulfur subunit), SdhB_1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	sdhB_1
+B2HN41	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nirB
+B2HN42	tr	Nitrite reductase (NADH) small subunit	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	nirD
+B2HN99	tr	Radical SAM core domain-containing protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2148
+B2HP12	tr	Uncharacterized protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0590
+B2HP31	tr	Iron-sulphur-binding reductase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0611
+B2HP41	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS_3	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	coxS_3
+B2HPC7	tr	Aconitate hydratase A	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	acn
+B2HPH1	tr	Transcriptional regulator WhiB	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	whiB
+B2HPM0	tr	Ring-hydroxylating dioxygenase, large terminal subunit	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3964
+B2HPM7	tr	cholesterol 7-desaturase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_3971
+B2HPM9	tr	Ferredoxin FdxD_1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxD_1
+B2HPU0	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	coxS
+B2HQ93	sp	Biotin synthase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	bioB
+B2HQS1	tr	DUF779 domain-containing protein	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_0781
+B2HQX4	tr	Carbon monoxyde dehydrogenase (Small chain), CoxS_1	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	coxS_1
+B2HRF7	tr	Type-5 uracil-DNA glycosylase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_4181
+B2HS21	tr	Anaerobic dehydrogenase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2605
+B2HSA5	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fdxC
+B2HSA7	tr	NADPH dependent 2,4-dienoyl-CoA reductase FadH	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fadH
+B2HSB0	tr	FO synthase	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	fbiC
+B2HSM0	tr	Mycofactocin maturase MftC	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	pqqE
+B2HST6	tr	Ferredoxin	Mycobacterium marinum (strain ATCC BAA-535 / M)	216594	MMAR_2667
+B8ZQJ9	sp	Lipoyl synthase	Mycobacterium leprae (strain Br4923)	561304	lipA
+B8ZR86	sp	Biotin synthase	Mycobacterium leprae (strain Br4923)	561304	bioB
+B8ZR90	sp	Quinolinate synthase	Mycobacterium leprae (strain Br4923)	561304	nadA
+B8ZRU5	sp	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium leprae (strain Br4923)	561304	ispG
+B8ZS29	sp	tRNA-specific 2-thiouridylase MnmA	Mycobacterium leprae (strain Br4923)	561304	mnmA
+B8ZS79	sp	Coproporphyrin III ferrochelatase	Mycobacterium leprae (strain Br4923)	561304	cpfC
+B8ZU90	sp	Phosphomethylpyrimidine synthase	Mycobacterium leprae (strain Br4923)	561304	thiC
+I6X7H4	tr	Ferredoxin	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdxD
+I6X9V3	tr	Conserved protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0811c
+I6XUD2	tr	Probable oxidoreductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0082
+I6Y187	tr	Possible transcriptional regulatory protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2621c
+I6YA42	tr	Phage Gp37Gp68 family protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2734
+L0T2Z1	tr	Possible oxidoreductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0197
+O06560	tr	Probable respiratory nitrate reductase (Beta chain) NarH	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	narH
+O06581	sp	HTH-type transcriptional regulator PrpR	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	prpR
+O06582	sp	2-methylcitrate dehydratase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	prpD
+O07238	tr	Uncharacterized protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0311
+O33183	tr	Possible molybdopterin biosynthesis protein MoeX	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	moeX
+O33254	tr	PD-(D/E)XK endonuclease-like domain-containing protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2119
+O33268	tr	Probable iron-sulfur-binding reductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0338c
+O50431	tr	Probable NADPH dependent 2,4-dienoyl-CoA reductase FadH (2,4-dienoyl coenzyme A reductase) (4-enoyl-CoA reductase)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fadH
+O50433	tr	Ferredoxin	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdxC
+O52199	sp	Deoxyguanosinetriphosphate triphosphohydrolase-like protein	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	dgt
+O52200	sp	DNA primase	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	dnaG
+O53151	tr	Probable transcriptional regulatory protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv1460
+O53166	sp	Aconitate hydratase A	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	acn
+O53181	sp	2-oxoglutarate oxidoreductase subunit KorB	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	korB
+O53311	tr	Possible dioxygenase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv3161c
+O53348	tr	DNA 3'-5' helicase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv3202c
+O53353	sp	Transcriptional regulator WhiB2	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB2
+O53371	tr	succinate dehydrogenase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	sdhB
+O53468	sp	Putative toxin HigB2	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	higB2
+O53668	tr	Probable conserved integral membrane protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0246
+O53669	tr	Probable succinate dehydrogenase [iron-sulfur subunit] (Succinic dehydrogenase)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0247c
+O53674	tr	assimilatory sulfite reductase (ferredoxin)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nirB
+O53675	tr	Nitrite reductase (NADH) small subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nirD
+O53709	tr	Probable carbon monoxyde dehydrogenase (Small chain)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0374c
+O53937	sp	Ferredoxin FdxE	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdxE
+O69696	tr	Possible transferase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv3729
+O86347	tr	Probable oxidoreductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2776c
+P71592	sp	Transcriptional regulator WhiB5	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB5
+P71820	sp	Ferredoxin Fdx	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdx
+P71846	tr	Possible electron transfer protein FdxB	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdxB
+P71875	sp	3-ketosteroid-9-alpha-monooxygenase, oxygenase component	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	kshA
+P95188	tr	Probable pyruvate formate lyase activating protein PflA (Formate acetyltransferase activating enzyme) ([pyruvate formate-lyase] activating enzyme)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	pflA
+P95277	tr	Possible oxygenase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv1937
+P96218	sp	Glutamate synthase [NADPH] large chain	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	gltB
+P96395	tr	Possible methyltransferase (Methylase)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0213c
+P9WF37	sp	Probable transcriptional regulator WhiB6	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB6
+P9WF39	sp	Transcriptional regulator WhiB4	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB4
+P9WF41	sp	Redox- and pH-responsive transcriptional regulator WhiB3	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB3
+P9WF43	sp	Transcriptional regulator WhiB1	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB1
+P9WFC5	sp	UvrABC system protein C	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	uvrC
+P9WFP7	sp	Iron-sulfur cluster assembly SufBD family protein Rv1461	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv1461
+P9WG79	sp	Phosphomethylpyrimidine synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	thiC
+P9WGT5	sp	L-serine dehydratase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	sdaA
+P9WH15	sp	Probable dual-specificity RNA methyltransferase RlmN	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	rlmN
+P9WH21	sp	Putative Rieske 2Fe-2S iron-sulfur protein Rv3818	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv3818
+P9WH23	sp	Cytochrome bc1 complex Rieske iron-sulfur subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	qcrA
+P9WHQ7	sp	Amidophosphoribosyltransferase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	purF
+P9WIK3	sp	Adenosine 5'-phosphosulfate reductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	cysH
+P9WIV5	sp	NADH-quinone oxidoreductase subunit E	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nuoE
+P9WIV7	sp	NADH-quinone oxidoreductase subunit F	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nuoF
+P9WIV9	sp	NADH-quinone oxidoreductase subunit G	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nuoG
+P9WJ03	sp	Sulfite reductase [ferredoxin]	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	sir
+P9WJ69	sp	Anti-sigma factor RshA	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	rshA
+P9WJ79	sp	Mycofactocin maturase MftC	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	mftC
+P9WJ93	sp	3-ketosteroid-9-alpha-monooxygenase, ferredoxin reductase component	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	hmp
+P9WJG9	sp	NADH-quinone oxidoreductase subunit I	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nuoI
+P9WJH1	sp	NADH-quinone oxidoreductase subunit B	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nuoB
+P9WJI1	sp	Probable ferredoxin/ferredoxin--NADP reductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fprB
+P9WJK1	sp	Quinolinate synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nadA
+P9WJN7	sp	Iron-sulfur cluster carrier protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	mrp
+P9WJP9	sp	Uncharacterized oxidoreductase Rv2900c	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2900c
+P9WJQ1	sp	Nitrate reductase-like protein NarX	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	narX
+P9WJQ3	sp	Nitrate reductase alpha subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	narG
+P9WJS1	sp	GTP 3',8-cyclase 2	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	moaA2
+P9WJS3	sp	GTP 3',8-cyclase 1	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	moaA1
+P9WJS5	sp	tRNA-specific 2-thiouridylase MnmA	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	mnmA
+P9WK05	sp	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	miaB
+P9WK91	sp	Lipoyl synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	lipA
+P9WKF9	sp	4-hydroxy-3-methylbut-2-enyl diphosphate reductase 1	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	ispH1
+P9WKG1	sp	4-hydroxy-3-methylbut-2-enyl diphosphate reductase 2	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	ispH2
+P9WKG3	sp	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	ispG
+P9WKJ5	sp	Dihydroxy-acid dehydratase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	ilvD
+P9WKR3	sp	Uncharacterized protein Rv0877	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0877
+P9WKU5	sp	Probable redox regulatory protein Rv0495c	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0495c
+P9WL79	sp	Uncharacterized protein Rv2578c	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2578c
+P9WM53	sp	Type-5 uracil-DNA glycosylase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	udgB
+P9WME3	sp	Putative HTH-type transcriptional regulator Rv1287	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv1287
+P9WMI1	sp	HTH-type transcriptional regulator RamB	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	ramB
+P9WMN5	sp	Protein Rv2204c	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2204c
+P9WMR5	sp	ATP-dependent helicase DinG	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	dinG
+P9WMV7	sp	Uncharacterized GMC-type oxidoreductase Rv0492c	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0492c
+P9WMV9	sp	Cholesterol oxidase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	choD
+P9WN19	sp	Glutamate synthase [NADPH] small chain	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	gltD
+P9WN89	sp	Fumarate reductase iron-sulfur subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	frdB
+P9WN91	sp	Fumarate reductase flavoprotein subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	frdA
+P9WNE3	sp	Coproporphyrin III ferrochelatase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	cpfC
+P9WNE7	sp	Ferredoxin	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fdxA
+P9WNE9	sp	NADPH oxidoreductase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv3230c
+P9WP73	sp	Heme chaperone HemW	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	hemW
+P9WP77	sp	FO synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	fbiC
+P9WPQ7	sp	Biotin synthase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	bioB
+P9WQ09	sp	Adenine DNA glycosylase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	mutY
+P9WQ11	sp	Endonuclease III	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	nth
+P9WQF5	sp	3-isopropylmalate dehydratase large subunit	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	leuC
+P9WQJ5	sp	Oligopeptide transport ATP-binding protein OppD	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	oppD
+Q10675	tr	Precorrin-3B synthase CobG	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	cobG
+Q6MX01	sp	Probable transcriptional regulator WhiB7	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	whiB7
+Q79FB4	tr	Conserved hypothetical cysteine rich protein	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv2737A
+Q7ARS9	tr	nitric oxide dioxygenase	Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)	83332	Rv0385
+Q938C9	sp	3-isopropylmalate dehydratase large subunit	Mycolicibacterium smegmatis (strain ATCC 700084 / mc(2)155)	246196	leuC
