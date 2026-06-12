@@ -1,0 +1,45 @@
+family	functional_category	subsystem	redox_role	virulence_link
+Ferredoxin_4Fe4S	Electron transfer	General electron carrier	electron_shuttle	
+Ferredoxin_2Fe2S	Electron transfer	General electron carrier	electron_shuttle	
+Rieske	Energy metabolism	Respiratory chain (bc1/cytochrome)	electron_transport	
+Rieske_QcrA	Energy metabolism	Respiratory chain (cytochrome bc1, QcrA)	electron_transport	essential_respiration
+Rieske_steroid_oxygenase	Lipid metabolism	Cholesterol/steroid catabolism	oxygenase	cholesterol_catabolism_virulence
+Rieske_nitrite_reductase	Nitrogen metabolism	Nitrite reduction	redox_catalysis	
+Molybdoenzyme	Anaerobic respiration	Molybdopterin oxidoreductases	electron_transport	
+Radical_SAM	Diverse catalysis	Radical-SAM enzymes (general)	radical_catalysis	
+Radical_SAM_MoaA	Cofactor biosynthesis	Molybdopterin (moaA)	radical_catalysis	
+Radical_SAM_MiaB	tRNA modification	tRNA methylthiolation (miaB)	radical_catalysis	
+Radical_SAM_LipA	Cofactor biosynthesis	Lipoic acid synthase	radical_catalysis	essential
+Radical_SAM_BioB	Cofactor biosynthesis	Biotin synthase	radical_catalysis	
+Radical_SAM_RlmN	rRNA modification	rRNA methylation (rlmN)	radical_catalysis	
+Radical_SAM_HemN	Cofactor biosynthesis	Heme biosynthesis (hemN)	radical_catalysis	
+Radical_SAM_PqqE	Cofactor biosynthesis	PQQ biosynthesis	radical_catalysis	
+FbiC_FO_synthase	Cofactor biosynthesis	F420 biosynthesis (fbiC)	radical_catalysis	F420_redox_TB
+WhiB	Redox regulation	WhiB transcription factors	redox_sensor	WhiB3_6_7_virulence
+SDH_FRD	Energy metabolism	TCA / succinate dehydrogenase	electron_transport	essential_respiration
+NADH_dehydrogenase	Energy metabolism	Respiratory complex I (nuo)	electron_transport	essential_respiration
+Aconitase	Central metabolism	TCA cycle (aconitase)	catalytic_4Fe4S	
+IPM_isomerase_LeuC	Amino acid metabolism	Leucine biosynthesis	catalytic_4Fe4S	
+Glutamate_synthase	Amino acid metabolism	Glutamate synthase (GOGAT)	catalytic	
+IspG_HMBPP_synthase	Isoprenoid biosynthesis	MEP pathway (ispG)	catalytic_4Fe4S	essential_MEP
+Nitrite_sulfite_reductase	Assimilation	Nitrite/sulfite reduction (siroheme)	redox_catalysis	
+SUF_biogenesis	Fe-S biogenesis	SUF assembly machinery	assembly	essential_SUF_operon
+Ferredoxin_reductase_FprB	Electron transfer	Ferredoxin/flavodoxin reductase	electron_donor	
+FeS_reductase_CCG	Redox	CCG-domain (heterodisulfide-like)	redox_catalysis	
+DNA_glycosylase_MutY	DNA repair	Base excision repair (MutY)	DNA_repair	oxidative_stress_survival
+DNA_glycosylase_Nth	DNA repair	Base excision repair (EndoIII)	DNA_repair	oxidative_stress_survival
+SerA_dehydrogenase	Amino acid metabolism	Serine biosynthesis (flagged non-FeS)	catalytic	
+Serine_dehydratase	Amino acid metabolism	Serine deamination	catalytic_4Fe4S	
+CobG_precorrin	Cofactor biosynthesis	B12/cobalamin (precorrin)	catalytic	
+FadH_dienoyl_CoA	Lipid metabolism	Fatty acid beta-oxidation (FadH)	catalytic	lipid_catabolism
+DUF779_FeS_candidate	Fe-S biogenesis	IscA/HesB-like assembly (putative)	assembly	
+Dihydroxyacid_dehydratase_IlvD	Amino acid metabolism	Branched-chain AA biosynthesis (IlvD)	catalytic_4Fe4S	essential_BCAA
+IspH_LytB	Isoprenoid biosynthesis	MEP pathway (IspH/LytB)	catalytic_4Fe4S	essential_MEP_drugtarget
+Quinolinate_synthase_NadA	Cofactor biosynthesis	NAD biosynthesis (NadA)	catalytic_4Fe4S	
+ThiC	Cofactor biosynthesis	Thiamine biosynthesis (ThiC)	catalytic_4Fe4S	
+CDGSH_NEET	Electron transfer	CDGSH/NEET 2Fe-2S proteins	redox_2Fe2S	
+FhuF_siderophore_reductase	Iron acquisition	Siderophore-iron reduction (FhuF)	iron_reduction	iron_acquisition
+PhnJ_CP_lyase	Phosphonate metabolism	C-P lyase (PhnJ)	radical_catalysis	
+Aldehyde_Fd_oxidoreductase	Diverse catalysis	Aldehyde:ferredoxin oxidoreductase (AFOR, trace)	catalytic_4Fe4S	
+SufU_assembly	Fe-S biogenesis	SUF sulfur transfer (SufU)	assembly	essential_SUF
+NifU_assembly	Fe-S biogenesis	ISC scaffold (NifU)	assembly	
