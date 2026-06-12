@@ -1,0 +1,44 @@
+family	essentiality	evidence_note
+IspG_HMBPP_synthase	essential	MEP pathway, validated drug target (DeJesus2017,Griffin2011)
+IspH_LytB	essential	MEP pathway, validated drug target (DeJesus2017)
+Radical_SAM_LipA	essential	lipoic acid synthase (DeJesus2017)
+SUF_biogenesis	essential	sole Fe-S assembly system in Mtb, sufBCD operon (DeJesus2017)
+SufU_assembly	essential	SUF sulfur transfer (DeJesus2017)
+Quinolinate_synthase_NadA	essential	NAD biosynthesis (DeJesus2017)
+Dihydroxyacid_dehydratase_IlvD	essential	BCAA biosynthesis (DeJesus2017)
+ThiC	essential	thiamine biosynthesis (DeJesus2017)
+Aconitase	essential	TCA cycle, AcnA (Griffin2011)
+Glutamate_synthase	essential	gltB nitrogen assimilation (DeJesus2017)
+WhiB	mixed	WhiB1/WhiB2 essential; WhiB3/6/7 non-essential virulence regulators (DeJesus2017)
+SDH_FRD	growth-defect	succinate dehydrogenase, respiratory (DeJesus2017)
+NADH_dehydrogenase	growth-defect	nuo complex I, partial redundancy with NDH-2 (DeJesus2017)
+Rieske_QcrA	essential	cytochrome bc1, qcrCAB operon, drug target (DeJesus2017)
+Ferredoxin_4Fe4S	mixed	some essential (fdxA context-dependent), most non-essential
+Ferredoxin_2Fe2S	non-essential	mostly accessory electron carriers
+Radical_SAM_MoaA	growth-defect	molybdopterin biosynthesis
+Radical_SAM_MiaB	non-essential	tRNA modification
+Radical_SAM_BioB	essential	biotin synthase (DeJesus2017)
+Radical_SAM_HemN	essential	heme biosynthesis (DeJesus2017)
+Radical_SAM	non-essential	diverse, mostly accessory
+Radical_SAM_RlmN	non-essential	rRNA modification
+Radical_SAM_PqqE	non-essential	PQQ biosynthesis
+FbiC_FO_synthase	non-essential	F420 biosynthesis; activates pretomanid/delamanid prodrugs
+Rieske_steroid_oxygenase	non-essential	KshA cholesterol catabolism, virulence factor in vivo
+Rieske	non-essential	mostly environmental oxygenases
+Rieske_nitrite_reductase	non-essential	nitrite reduction
+Nitrite_sulfite_reductase	non-essential	assimilatory
+Molybdoenzyme	non-essential	narG dormancy/virulence, mostly non-essential
+DNA_glycosylase_MutY	non-essential	oxidative-stress survival (BER)
+DNA_glycosylase_Nth	non-essential	oxidative-stress survival (BER)
+CDGSH_NEET	non-essential	2Fe-2S, accessory
+FhuF_siderophore_reductase	non-essential	siderophore iron release
+NifU_assembly	non-essential	accessory assembly (SUF is primary)
+Ferredoxin_reductase_FprB	non-essential	ferredoxin reductase
+FeS_reductase_CCG	non-essential	CCG domain
+IPM_isomerase_LeuC	essential	leucine biosynthesis (DeJesus2017)
+Serine_dehydratase	non-essential	serine deamination
+SerA_dehydrogenase	non-essential	serine biosynthesis
+CobG_precorrin	non-essential	B12 biosynthesis
+FadH_dienoyl_CoA	non-essential	fatty acid oxidation
+PhnJ_CP_lyase	non-essential	phosphonate metabolism
+Aldehyde_Fd_oxidoreductase	non-essential	trace
