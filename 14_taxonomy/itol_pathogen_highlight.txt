@@ -1,0 +1,13 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Pathogen
+COLOR	#e31a1c
+DATA
+GCF_000069185.1	#e31a1c	Mycobacterium abscessus
+GCF_000157895.3	#e31a1c	Mycobacterium kansasii
+GCF_000195855.1	#e31a1c	Mycobacterium leprae
+GCF_000195955.2	#e31a1c	Mycobacterium tuberculosis
+GCF_000612725.1	#e31a1c	Mycobacterium austroafricanum
+GCF_003391395.1	#e31a1c	Mycobacterium marinum
+GCF_009741445.1	#e31a1c	Mycobacterium avium
+GCF_900566075.1	#e31a1c	Mycobacterium pseudokansasii
