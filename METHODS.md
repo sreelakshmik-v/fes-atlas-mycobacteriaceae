@@ -1,155 +1,153 @@
-# The Fe–S Cluster Protein Atlas of *Mycobacteriaceae*
-## Complete Step-by-Step Methods and Results Log (Steps 1–10)
+# The Fe–S Cluster Protein Atlas of *Mycobacterium*
+## Complete step-by-step methods log (Steps 1–15)
 
-**Project:** Comprehensive identification, classification, coordination analysis, network analysis, and structural validation of iron–sulfur (Fe–S) cluster proteins across the family *Mycobacteriaceae* (genus *Mycobacterium* sensu lato).
+**Project:** Genome-wide identification, classification, coordination analysis, network analysis,
+structural comparison, conservation, phylogenetics and essentiality mapping of iron–sulfur (Fe–S)
+cluster proteins across the genus *Mycobacterium*.
 
-**Research question:** *What is the complete set of Fe–S cluster-containing proteins in mycobacteria, and how do they contribute to metabolism, redox homeostasis, and virulence?* (Half 1 = identification/classification; Half 2 = functional contribution.)
+**Manuscript:** Sreelakshmi K V, Sarode VV, Shenoy G G, Dehury B. *Unified by chemistry, not fold:
+A genus-wide atlas of the mycobacterial iron–sulfur proteome and its antitubercular target space.*
 
-**Compute environment:** local Linux server (28 cores, 15 GB RAM; NVIDIA RTX A400, 4 GB VRAM); heavy data on `/media/budheswar-dehury/DATADRIVE0/Fe-S`. Conda envs: `bakta`, `fes_tools` (mmseqs2, mafft, trimal, hmmer, seqkit, pandas, cd-hit, foldseek). TMalign at `/usr/bin/TMalign`.
+**Research question:** What is the complete set of Fe–S cluster-containing proteins in
+*Mycobacterium*, how are those proteins related structurally and evolutionarily, and what does the
+repertoire imply for antitubercular target selection?
 
-**Methodological template:** adapted from the Alba-domain SSN study (Sci Rep s41598-024-79937-4): PSI-BLAST/HMM → SSN (EFI-EST) → HHpred → structure (TMalign) → phylogeny. Reference biology: Vallières et al. *Metallomics* 2024 (Fe–S review); Wehrspan et al. 2022 (AlphaFold Fe–S coordination geometry); MetalPredator.
+**Compute environment:** local Linux server (28 cores, 15 GB RAM; NVIDIA RTX A400, 4 GB VRAM); data
+on `/media/budheswar-dehury/DATADRIVE0/Fe-S`. Conda envs: `bakta`, `fes_tools` (mmseqs2, mafft,
+trimal, hmmer, seqkit, pandas, cd-hit, foldseek). TM-align at `/usr/bin/TMalign`.
+
+**Reference biology:** Vallières et al. *Metallomics* 2024 (Fe–S review); Wehrspan et al. 2022
+(AlphaFold Fe–S coordination geometry); MetalPredator.
 
 ---
 
 ## SCOPE DECISIONS (locked at project start)
 
-1. **Taxonomic scope:** family *Mycobacteriaceae* (five genera per GTDB/LPSN: *Mycobacterium*, *Mycobacteroides*, *Mycolicibacterium*, *Mycolicibacter*, *Mycolicibacillus*).
-2. **Genome set:** GTDB species-representative genomes (R232, 15 Apr 2026), one per 95% ANI species cluster — avoids *M. tuberculosis* oversampling.
-3. **Annotation:** uniform re-annotation with Bakta (not as-deposited NCBI annotations).
-4. **Definition of "Fe–S protein":** proteins that coordinate an Fe–S cluster ([2Fe-2S], [3Fe-4S], [4Fe-4S]) as cofactor — clients + carriers; SUF/ISC biogenesis kept and tagged (systems-level framing).
-5. **Two-phase question:** identify completely (Steps 1–10), then map function (Step 11+).
+1. **Taxonomic scope:** the genus *Mycobacterium* as circumscribed by GTDB. All 277
+   species-representative genomes analysed fall in `g__Mycobacterium` under GTDB R232. Under NCBI
+   taxonomy the same set is distributed among *Mycobacterium*, *Mycolicibacterium* and
+   *Mycobacteroides*; GTDB circumscription is used throughout and all counts refer to it.
+2. **Genome set:** GTDB species-representative genomes (R232, 15 Apr 2026), one per 95 % ANI species
+   cluster — avoids *M. tuberculosis* oversampling. Prevalence is therefore expressed as the
+   percentage of species, not of genomes sampled.
+3. **Annotation:** uniform re-annotation with Bakta, not as-deposited NCBI annotations.
+4. **Definition of an Fe–S protein:** a protein that coordinates an Fe–S cluster ([2Fe–2S],
+   [3Fe–4S], [4Fe–4S]) as cofactor — clients plus carriers; SUF/ISC biogenesis components retained
+   and tagged.
+5. **Two discovery tiers:** a seed-based core (Steps 1–10) and a Pfam–GO expansion (Step 11), kept
+   separable throughout by a `provenance` column.
 
 ---
 
 # STEP 1 — Curated, metadata-rich seed dataset
 
-**Goal:** a locked, provenance-tracked seed FASTA with per-protein metadata. (Previous attempt failed by clustering before locking seeds and by losing metadata — corrected here.)
+**Goal:** a locked, provenance-tracked seed FASTA with per-protein metadata.
 
-### 1.1 — Source
-- Curated Fe–S protein supplementary (Vallières-lineage), 9 sheets: 1 SUF-machinery wide matrix + 8 species client sheets — Mtb (103), Mab (136), Mav (107), Mmar (108), Msm (136), Mul (75), Mbv (70), Mle (50). Identification method column = "UniProt + AlphaFold" / Estellon et al. (structurally vetted).
+### 1.1 Source
+Curated Fe–S protein supplementary (Vallières lineage), 9 sheets: 1 SUF-machinery matrix plus 8
+species client sheets — Mtb (103), Mab (136), Mav (107), Mmar (108), Msm (136), Mul (75), Mbv (70),
+Mle (50). Identification method = "UniProt + AlphaFold" / Estellon et al. (structurally vetted).
 
-### 1.2 — Extract + validate accession list
+### 1.2 Extract and validate accession list
 ```bash
 libreoffice --headless --convert-to csv --outdir . seeds.xlsx
-awk -F',' 'NR>1 {print $2}' seeds.csv | sed 's/[[:space:]]//g' | grep -v '^$' > ids_raw.txt   # ~775
+awk -F',' 'NR>1 {print $2}' seeds.csv | sed 's/[[:space:]]//g' | grep -v '^$' > ids_raw.txt
 sort -u ids_raw.txt > ids_unique.txt
-# UniProt accession format check:
 grep -vE '^[OPQ][0-9][A-Z0-9]{3}[0-9]$|^[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}$' ids_unique.txt
 ```
 
-### 1.3 — Fetch sequences (UniProt ID Mapping API)
+### 1.3 Fetch sequences (UniProt ID Mapping API)
 ```bash
 JOB=$(curl -s --request POST 'https://rest.uniprot.org/idmapping/run' \
   --form 'from=UniProtKB_AC-ID' --form 'to=UniProtKB' \
   --form "ids=$(paste -sd, ids_unique.txt)" | grep -o '"jobId":"[^"]*"' | cut -d'"' -f4)
 curl -s "https://rest.uniprot.org/idmapping/uniprotkb/results/stream/$JOB?format=fasta&compressed=false" -o seeds_raw.fasta
-grep -c '^>' seeds_raw.fasta
 ```
 
-### 1.4 — Reconcile requested vs returned (QC step previously skipped)
+### 1.4 Reconcile requested versus returned
 ```bash
 grep '^>' seeds_raw.fasta | cut -d'|' -f2 | sort -u > ids_returned.txt
-comm -23 ids_unique.txt ids_returned.txt > ids_missing.txt   # resolve each: merged/demerged/obsolete
+comm -23 ids_unique.txt ids_returned.txt > ids_missing.txt
 ```
+Each missing accession resolved individually as merged, demerged or obsolete.
 
-### 1.5 — Family-coverage confirmation (biological check)
-```bash
-grep '^>' seeds_raw.fasta > headers.txt
-for fam in ferredoxin Rieske "radical SAM" aconitase dehydratase NEET CDGSH glycosylase WhiB SufB SufD IscA NfuA; do
-  printf "%-15s %d\n" "$fam" "$(grep -ic "$fam" headers.txt)"; done
-grep -iE 'whib' headers.txt   # WhiB1-7 must be present (central to redox/virulence half)
-```
-**Result:** all major Fe–S families present; WhiB fully covered; aconitase present under "aconitate hydratase" (9); 7 suf/isc/nfu entries present (kept, tagged biogenesis). Composition biologically coherent (Rieske, sulfite reductase, radical-SAM RlmN ×5, WhiB1–7, glycosylases). A few "Uncharacterized/Putative" entries flagged for scrutiny at structural stage.
+### 1.5 Family-coverage confirmation
+All major Fe–S families present; WhiB1–7 fully covered; aconitase present under "aconitate
+hydratase" (9); 7 suf/isc/nfu entries retained and tagged as biogenesis.
 
-### 1.6 — Rename headers to stable IDs
+### 1.6 Rename headers to stable IDs
 ```bash
-grep '^>' seeds_raw.fasta | sed -E 's/^>(sp|tr)\|([A-Z0-9]+)\|([A-Z0-9_]+) (.*) OS=(.*) OX=([0-9]+).*GN=([^ ]+).*/\2\t\1\t\4\t\5\t\6\t\7/' > meta_from_headers.tsv
-# (all 774 parsed cleanly, zero GN=-less failures)
 seqkit replace -p '^\w+\|(\w+)\|.*$' -r '{kv}' -k header_map_clean.tsv seeds_raw.fasta > seeds_renamed.fasta
 ```
 
-### 1.7 — Deduplicate at 100% identity only (NOT CD-HIT 90%)
+### 1.7 Deduplicate at 100 % identity only
 ```bash
 seqkit rmdup -s seeds_renamed.fasta -o seeds_locked.fasta -D seq_duplicates.txt
-seqkit stats seeds_locked.fasta
 ```
-**Result:** 774 input → **717 unique sequences** (57 collapses = byte-identical Mtb/Mbv orthologs + a few Mul/Mmar pairs; recorded in `seq_duplicates.txt`, not lost).
+774 input → **717 unique sequences** (57 collapses, byte-identical Mtb/Mbv orthologues and a few
+Mul/Mmar pairs; recorded, not discarded).
 
-### 1.8 — Lock + document
-```bash
-chmod 444 seeds_locked.fasta header_map_clean.tsv seq_duplicates.txt
-# master_metadata.tsv = 774 rows, cols: uniprot_acc, sprot_trembl, protein_name, species, species_taxid, gene_name
-```
-**Deferred (documented in README, trigger = before Step 11):** `category` (client/biogenesis/carrier) and `source_sheet`.
-
-**STEP 1 DELIVERABLES:** `seeds_locked.fasta` (717), `master_metadata.tsv` (774 rows), `seq_duplicates.txt`, `SEED_README.txt`, `SEED_STATS.txt`.
+**Deliverables:** `seeds_locked.fasta` (717), `master_metadata.tsv` (774 rows), `seq_duplicates.txt`.
 
 ---
 
-# STEP 2 — Genome collection + uniform annotation
+# STEP 2 — Genome collection and uniform annotation
 
-### 2.1 — GTDB representative set
-- GTDB Release R232 (15 Apr 2026). Filtered `f__Mycobacteriaceae` species representatives → genome accession list.
+### 2.1 GTDB representative set
+GTDB release R232 (15 Apr 2026); species representatives retrieved and filtered to the genus.
 
-### 2.2 — Download genomes (NCBI `datasets`)
+### 2.2 Download genomes
 ```bash
 datasets download genome accession --inputfile got_accessions.txt --include genome
-# nucleotide FASTAs for each representative
 ```
 
-### 2.3 — Quality filter (CheckM2)
-- Retained genomes with completeness ≥95%, contamination ≤5%.
+### 2.3 Quality filter (CheckM2)
+Genomes retained at completeness ≥ 95 % and contamination ≤ 5 %.
 
-### 2.4 — Uniform annotation (Bakta)
+### 2.4 Uniform annotation (Bakta)
 ```bash
 bakta --db .../bakta_db/db --genus Mycobacterium --threads 16 <genome>.fna --output <out>
-# full Bakta DB v6.0 (32 GB)
 ```
-**Result:** **277 genomes** uniformly annotated. Verified real proteome count = 277 (excluding `*.hypotheticals.faa`); CDS range 3,186–7,862, mean 5,490.
+**277 genomes** uniformly annotated (Bakta DB v6.0). CDS range 3,186–7,862, mean 5,490.
 
-**Documented limitation:** *M. leprae* (GCF_000195855.1, TN strain) = 3,989 CDS but only 25 Bakta-pseudogenes vs ~1,300 curated pseudogenes — Bakta/Pyrodigal calls intact ORFs over degraded regions.
-
-**STEP 2 DELIVERABLES:** `bakta_out/` (277 dirs), `proteomes/` (277 .faa), `master_metadata.tsv`.
+**Documented limitation:** *M. leprae* (GCF_000195855.1) yields 3,989 CDS but only 25 Bakta
+pseudogenes against roughly 1,300 curated pseudogenes — Pyrodigal calls intact ORFs over degraded
+regions. Pseudogene-derived calls are therefore under-flagged in the leprosy bacilli.
 
 ---
 
 # STEP 3 — Family-aware HMM construction
 
-### 3.1 — Cluster seeds (mmseqs2)
+### 3.1 Cluster seeds
 ```bash
 mmseqs easy-cluster seeds_locked.fasta seeds_clust tmp --min-seq-id 0.30 -c 0.70
 ```
-**Result:** 210 clusters. Size distribution: 80 singletons, 42 doubletons, 19 triplets, 17 quads (=158 "thin"); 52 clusters ≥5 members. Largest = 26 members (MMAR_2932 → Ferredoxin_4Fe4S/Fer4_13).
+210 clusters: 80 singletons, 42 doubletons, 19 triplets, 17 quads (158 thin); 52 clusters ≥ 5
+members. Largest 26 members.
 
-### 3.2 — Build custom HMMs for the 52 large clusters
+### 3.2 Build custom HMMs for the 52 large clusters
 ```bash
-# per cluster:
 mafft --auto cluster.faa > cluster.aln
 trimal -in cluster.aln -out cluster.trim -gt 0.2
 hmmbuild cluster.hmm cluster.trim
 ```
-- GA (gathering) thresholds calibrated by scanning each HMM back against the seed set (lowest GA = 64.7 bits).
-**Result:** 52 custom seed-built HMMs.
+Gathering thresholds calibrated by scanning each HMM back against the seed set (lowest GA 64.7 bits).
 
-### 3.3 — Cover the 158 thin clusters with Pfam HMMs
-```bash
-hmmfetch Pfam-A.hmm <family>   # for each
-```
-- 17 Pfam Fe–S families fetched: Fer2, Fer4, Fer4_2/6/7/8/9/10/12/17, Rieske, Rieske_2, Radical_SAM, Molybdop_Fe4S4, Whib, SUFBD_core, UDG.
+### 3.3 Cover the 158 thin clusters with Pfam HMMs
+17 Pfam Fe–S families fetched: Fer2, Fer4, Fer4_2/6/7/8/9/10/12/17, Rieske, Rieske_2, Radical_SAM,
+Molybdop_Fe4S4, Whib, SUFBD_core, UDG.
 
-### 3.4 — Orphan triage
-- 6 un-clustered orphans (`orphans_flagged.tsv`): MAB_4421 → SDH (covered by SDH HMM); MSMEG_1081 → Rieske (covered); **BCG_2352, MMAR_0590, Rv0246, Rv0311 = candidate-novel** (4 orphans carried forward for structural adjudication in Step 10).
+### 3.4 Orphan triage
+6 unclustered orphans; 2 covered by existing HMMs, 4 carried forward for structural adjudication
+(Step 10.3).
 
-### 3.5 — Assemble final library
-**Result:** `fes_final.hmm` = **69 HMMs** (52 custom + 17 Pfam), all GA-tagged. Smoke-test on Mtb proteome = 68 unique proteins recovered.
-
-**STEP 3 DELIVERABLES:** `fes_final.hmm` (+ .h3*), `hmm_family_map.tsv` (69 lines: HMM→family→provisional cluster_type), `hmms/`, alignments, `orphans_flagged.tsv`.
+### 3.5 Final library
+`fes_final.hmm` = **69 HMMs** (52 custom + 17 Pfam), all GA-tagged.
 
 ---
 
 # STEP 4 — Proteome scan
 
-### 4.1 — Scan all 277 proteomes
 ```bash
 for prot in proteomes/*.faa; do
   hmmsearch --cpu 16 --cut_ga \
@@ -158,177 +156,380 @@ for prot in proteomes/*.faa; do
     fes_final.hmm $prot
 done
 ```
-
-### 4.2 — Best-hit resolution
-- 44,260 raw rows → **25,996 unique Fe–S proteins** (one best HMM hit per protein).
-**Result:** mean 93.8 Fe–S proteins/genome; range **30** (*M. leprae* + *M. lepromatosis*, leprosy bacilli, joint-lowest) to **141** (*M. moriokaense*, environmental, Rieske-rich — validates biology).
-
-**STEP 4 DELIVERABLES:** `all_hits_besthit.tsv`, `scan_tbl/`, `scan_dom/`.
+44,260 raw rows → **25,996 unique proteins** after best-hit resolution (one best HMM per protein).
 
 ---
 
-# STEP 5–7 — Family classification, false-positive demotion, pseudogene flag, LOCK
+# STEP 5–7 — Family classification, false-positive demotion, pseudogene flag, lock
 
-### 5.1 — Map HMM → family (35 genuine families)
-- `hmm_family_map.tsv` resolved each HMM (locus-tag-named HMMs resolved via UniProt names + Pfam hmmscan).
+### 5.1 Map HMM to family
+`hmm_family_map.tsv` resolves each HMM; locus-tag-named HMMs resolved via UniProt names and Pfam
+hmmscan.
 
-### 5.2 — Demote non-Fe–S families (independent KEGG evidence)
-- **ParA_ATPase** (655 hits, KEGG K03496) — not Fe–S → demoted.
-- **PrpD** methylcitrate dehydratase (10 hits, K01720) — not Fe–S → demoted.
-- DUF779 (6 hits, K09959, relates Rv0526) — kept as candidate.
+### 5.2 Demote non-Fe–S families on independent KEGG evidence
+- **ParA_ATPase** (655 hits, K03496) — not Fe–S, demoted.
+- **PrpD** methylcitrate dehydratase (10 hits, K01720) — not Fe–S, demoted.
+- **DUF779** (6 hits, K09959) — retained as a candidate pending structural adjudication (Step 10.1).
+
+### 5.3 Pseudogene flag
+3,666 pseudogene tags across genomes, yielding 19 pseudogene-derived hits dataset-wide.
+
+### 5.4 Lock
+`all_hits_final.tsv` = 25,312 proteins, 35 families.
+
+---
+
+# STEP 8 — Coordination analysis, sequence layer
+
+### 8.1 Family-aware Cys/His motif scan
+`coordination_scan3.py` applies a per-family expected coordinating-cysteine count reflecting real
+biology rather than a uniform four: radical SAM (3 Cys + SAM), ferredoxin [4Fe–4S] (3 Cys ± Asp),
+aconitase and IPM isomerase (3 Cys + open substrate site), Rieske (2 Cys + 2 His), glutamate
+synthase [3Fe–4S] (3 Cys); genuine 4-Cys families are WhiB, molybdoenzyme and glycosylase. Two motif
+tiers per family (canonical spacing, relaxed variant).
+
+### 8.2 Confidence assignment
+high 18,050 (71 %), medium 6,473 (26 %), low 789 (3 %).
+
+### 8.3 Cluster-type distribution at this stage
+[4Fe–4S] 15,476, [2Fe–2S] 7,476, multi 1,129, assembly 556, [3Fe–4S] 396, FAD 273, unknown 6.
+
+### 8.4 Refinement
+`coordination_refined.tsv`: 24,717 Fe–S supported, 326 ambiguous, 269 likely non-Fe–S;
+structural-target list of 601.
+
+### 8.5 Methodological caveat (load-bearing)
+Cysteine **count** is a screen, not proof of Fe–S binding, which depends on three-dimensional
+Sγ–Sγ distance. Too few cysteines is a sound demotion floor; enough cysteines is only
+coordination-consistent, never confirmation. Step 10 and Step 13 are the arbiters. This caveat is the
+reason coordination is re-tested structurally in Step 13 rather than taken from this step.
+
+---
+
+# STEP 9 — Sequence similarity networks
+
+### 9.1 Representative selection
 ```bash
-# removed 665 (ParA + PrpD) -> all_hits_validated.tsv
-```
-
-### 5.3 — Pseudogene flag (from Bakta gff3)
-- 3,666 pseudogene tags across genomes → only **19 pseudogene-derived Fe–S hits** dataset-wide (Bakta calls few pseudogenes).
-
-### 5.4 — LOCK
-**Result:** `all_hits_final.tsv` = **25,312 functional Fe–S proteins, 35 families**, matrix 35 × 277.
-
-### 5.5 — Family abundance (top families)
-| Family | n | Family | n |
-|---|---|---|---|
-| Ferredoxin_4Fe4S | 4,681 | WhiB | 2,200 |
-| Rieske | 4,266 | Ferredoxin_2Fe2S | 2,159 |
-| Molybdoenzyme | 2,683 | DNA_glycosylase | 832 |
-| Radical_SAM | 2,511 | NADH_dehydrogenase | 722 |
-
-### 5.6 — Core/accessory/rare (prevalence across 277)
-- **14 CORE families** (≥263/277, i.e. ≥95%): DNA_glycosylase, Glutamate_synthase, Ferredoxin_4Fe4S, WhiB, SDH_FRD, Radical_SAM, SUF_biogenesis (all 277); Rieske, Ferredoxin_2Fe2S (276); Molybdoenzyme (275); NADH_dehydrogenase (274); FprB (273); IspG (272); Radical_SAM_MoaA (266).
-- **19 accessory**, **4 rare** (CobG 19, FadH 12, Serine_dehydratase 10, DUF779 6).
-- *M. leprae* = 28 functional Fe–S proteins.
-
-**STEP 5–7 DELIVERABLES:** `all_hits_final.tsv`, `fes_family_matrix_final.tsv`, `genome_family_counts_final.tsv`, `pseudogene_locustags.tsv`, CSV exports, 4 figures (abundance bar, clustered heatmap, binary presence/absence).
-
----
-
-# STEP 8 — Coordination analysis (sequence layer)
-
-### 8.1 — Family-aware Cys/His motif scan
-- Script `coordination_scan3.py`: per-family expected coordinating-Cys count reflecting REAL biology (3-Cys families set to 3, not 4): radical-SAM (3 Cys + SAM), ferredoxin 4Fe4S (3 Cys ± Asp 4th), aconitase/IPM-isomerase (3 Cys + open substrate site), Rieske (2 Cys + 2 His), glutamate synthase [3Fe-4S] (3 Cys); genuine 4-Cys families = WhiB, molybdoenzyme, glycosylase.
-- Two motif tiers per family (primary canonical spacing + relaxed variant spacing).
-
-### 8.2 — Confidence assignment
-**Result (final, after correcting per-family Cys minima):**
-- **high = 18,050 (71%)** | medium = 6,473 (26%) | **low = 789 (3%)**
-- Motif: 14,215 canonical (primary) + 3,835 variant (relaxed) = 18,050 with recognizable clustered motif (~56% textbook motif).
-
-### 8.3 — Cluster-type distribution
-- **[4Fe-4S] = 15,476 (61%)**, **[2Fe-2S] = 7,476 (30%)**, multi 1,129, assembly 556, [3Fe-4S] 396, FAD 273, unknown 6.
-
-### 8.4 — Coordination refinement (flag likely non-Fe–S)
-- The 789 low-confidence proteins broke down by family: **DNA_glycosylase 549**, SerA 135, WhiB 80, then small tails.
-- DNA_glycosylase split: 477 FeS_supported (≥3 Cys), 221 ambiguous (2 Cys), 134 likely-nonFeS (≤1 Cys).
-- SerA: 135/136 likely-nonFeS (≤2 Cys); full-length 529-aa phosphoglycerate dehydrogenase, KEGG non-Fe–S.
-**Result (`coordination_refined.tsv`):** 24,717 FeS_supported, 326 ambiguous_structural, 269 likely_NONFES_demote → structural-target list = 601 (326 + 269 + 6 DUF779).
-
-### 8.5 — KEY METHODOLOGICAL CAVEAT (recorded)
-Cysteine COUNT is a screen, not proof of Fe–S binding (binding depends on 3D Sγ–Sγ distance). "Too few Cys" = sound demotion floor; "enough Cys" = only coordination-CONSISTENT, not confirmed. The FeS_supported set is "sequence/coordination-supported," not "confirmed." Structural validation (Step 10) is the arbiter.
-
-**STEP 8 DELIVERABLES:** `coordination_per_protein.tsv`, `coordination_refined.tsv`, `structural_targets.tsv`, `coordination_scan3.py`.
-
----
-
-# STEP 9 — Sequence Similarity Networks (SSN) — Alba-paper style
-
-### 9.1 — Full-repertoire SSN input
-```bash
-# exclude likely-nonFeS (269); 25,312 - 269 = 25,043 proteins
-awk -F'\t' '$9!="likely_NONFES_demote"{print $1"|"$2"\t"$3}' coordination_refined.tsv > ssn_protein_family.tsv
 cd-hit -i ssn_input_all.faa -o ssn_rep70.faa -c 0.70 -n 5 -M 4000 -T 8
 ```
-**Result:** 25,043 → **2,053 representatives** at 70% identity (CD-HIT 55% gave 980; 70% chosen for richer node count, closer to Alba's ~6,000).
+Representatives at 70 % identity. Rebuilt on the v3 atlas in Step 11 (see 11.4), giving the 2,234
+representatives reported in the manuscript.
 
-### 9.2 — EFI-EST + Cytoscape
-- Uploaded `ssn_rep70.faa` to EFI-EST (FASTA option, headers preserved). EFI-EST assigns `zzz####` node IDs; original `genome|locus_tag` preserved in Description column.
-- Alignment score threshold = 4 (≈ Alba paper). Downloaded XGMML → Cytoscape → Prefuse Force-Directed layout.
-- Node attribute (family + super_family) built by parsing Description (`make_family_attr.py`); imported keying on `shared name`.
+### 9.2 EFI-EST and Cytoscape
+`ssn_rep70.faa` submitted to EFI-EST; node IDs assigned as `zzz####` with `genome|locus_tag`
+preserved in the Description column. XGMML downloaded and laid out in Cytoscape (Prefuse
+force-directed). Node attributes (family, super-family, coordination status, cysteine count,
+predicted cluster) built by `make_family_attr.py` and keyed on `shared name`.
 
-### 9.3 — Result
-- The 35 families separate cleanly into distinct clusters = **independent validation of HMM classification** (sequence clustering recovers functional families).
-- Super-family node counts: Rieske 494, Ferredoxin_4Fe4S 474, Ferredoxin_2Fe2S 374, WhiB 286, Molybdoenzyme 169, Radical_SAM 115, DNA_glycosylase 96; small families = peripheral specks (expected).
+### 9.3 Threshold selection
+Networks were generated across a range of alignment-score thresholds and the threshold adopted for
+the reported network was selected as the lowest value at which the major families separated into
+discrete components without fragmenting internally. The adopted threshold is recorded in the
+Cytoscape session files.
 
-### 9.4 — Per-family SSNs
-- Reusable prep (`prep_all_family_ssn.sh`): families with ≥50 representatives at 85% are SSN-worthy. **Worth submitting:** Rieske (1,560 reps), Ferredoxin_4Fe4S (1,321), Ferredoxin_2Fe2S (1,076), Molybdoenzyme (827), WhiB (595), Radical_SAM (585), DNA_glycosylase (388), FprB (101), CCG (83), NADH (68), SUF (54).
-- **Too conserved for SSN** (few reps despite many proteins — under purifying selection): SDH_FRD (9), Glutamate_synthase (21), Nitrite_reductase (15), Aconitase (3), IspG (2), IPM_isomerase (2). [Biologically meaningful: conserved-essential vs diverse-accessory split.]
-- **Rieske per-family SSN done:** sub-types (steroid_oxygenase, nitrite_reductase, QcrA) separate spatially from core Rieske = functional diversification visible. Disconnection between sub-clusters = the signal (distinct sub-families), not a bug.
-- `make_family_attr.py` is reusable per family (4 colorable attributes: fine_family, coord_status, n_cys, predicted_cluster). Remaining per-family SSNs to be batched.
-
-**STEP 9 DELIVERABLES:** `ssn_rep70.faa`, `rep70_family_attr2.tsv`, `cyto_*` files, `superfamily_map.tsv`, `per_family_ssn/`, `make_family_attr.py`, full-repertoire + Rieske SSN figures.
+### 9.4 Result
+Families separate into discrete clusters, providing independent validation of the HMM
+classification. Per-family networks were generated for families with ≥ 50 representatives;
+families too conserved to yield enough representatives (SDH_FRD, glutamate synthase, nitrite
+reductase, aconitase, IspG, IPM isomerase) are reported as such, the conserved-essential versus
+diverse-accessory split being itself informative.
 
 ---
 
-# STEP 10 — Structural validation (Depth A: validate + novelty)
+# STEP 10 — Structural validation of the seed-derived core
 
-**Tools:** HHpred (MPI Bioinformatics Toolkit, fold ID) | AlphaFold3 (structures; local GPU too small at 4 GB) | TMalign (local, fold superposition) | AlphaFill (cofactor transplant) | foldseek | BioPython MMCIFParser (Sγ–Sγ geometry; [4Fe-4S]~6.3 Å, [2Fe-2S]~3.5 Å per Wehrspan).
+**Tools:** HHpred (fold identification), AlphaFold3 (models), TM-align (superposition), AlphaFill
+(cofactor transplant), foldseek, BioPython MMCIFParser for Sγ–Sγ geometry.
 
-## 10.1 — DUF779 (strongest novelty result) → IscA/HesB Fe–S assembly fold
-- 6 proteins, one homogeneous family (158–166 aa; 2 mis-labeled "Acetaldehyde dehydrogenase" by Bakta). One HHpred representative suffices (`LNBHIF_00484`, H37Rv ortholog, relates Rv0526; seed = BCG_0499/A0A0H3M2A1).
-- **HHpred:** 98.8% to HesB/IscA Fe–S-biogenesis fold — PF05610 (DUF779) 100%, then 2P2E "Putative Fe-S biosynthesis protein", SCOP HesB-like (d1nwba, d2apna), IscA/YfhF (d1r94a), ECOD Fe-S_biosyn, PF01521 "Iron-sulphur cluster biosynthesis" — all ~98.8%.
-- **TMalign (AF3 model vs references):** vs IscA 1R94 = TM **0.64**; vs 2P2E = TM **0.56** (both >0.5 = same fold; ~12–16% seq id; DUF779 = IscA core + ~70 extra residues).
-- **Cys geometry (AF3 monomer):** 5 Cys, only one close pair (Cys35–Cys36 = 3.8 Å); rest 17–38 Å. Consistent with IscA-family **inter-subunit (dimer-interface)** coordination — monomer cannot show the full cage.
-- **AlphaFill:** no cofactor transplanted (empty table; IscA structures usually apo) — binding cannot be confirmed via this route.
-- **VERDICT:** IscA/HesB-like fold confirmed ×2 (HHpred + TMalign); putative Fe–S assembly/scaffold protein. Binding inferred, not proven. KEPT.
-- **CAVEAT:** known fold (not a novel fold). **Literature check pending** (DUF779↔Fe–S may already be published) before claiming novelty.
+### 10.1 DUF779 → IscA/HesB assembly fold
+6 proteins, one homogeneous family (158–166 aa). HHpred 98.8 % to the HesB/IscA Fe–S biogenesis
+fold (PF05610, 2P2E, SCOP HesB-like, IscA/YfhF, ECOD Fe-S_biosyn, PF01521). TM-align of the
+AlphaFold3 model against IscA 1R94 gives TM 0.64 and against 2P2E TM 0.56, both above the 0.5
+same-fold threshold at 12–16 % sequence identity. The monomer shows one close cysteine pair
+(3.8 Å) with the remainder 17–38 Å apart, consistent with the inter-subunit coordination
+characteristic of the IscA family, which a monomer cannot display. AlphaFill transplanted no
+cofactor, as is usual for apo IscA structures. **Verdict:** IscA/HesB-like fold confirmed by two
+independent routes; a putative Fe–S assembly scaffold. Binding is inferred, not proven, and the
+family is reported throughout as `DUF779_FeS_candidate`.
 
-## 10.2 — DNA_glycosylase reclassification (MAJOR correction)
-**Trigger:** coordination flagged 549/837 DNA_glycosylase as low-Cys; user questioned validity of Cys-count filtering.
-- Defining HMM = **Pfam UDG** (function-based model = uracil-DNA glycosylase, non-Fe–S by definition).
-- **HHpred on 4 reps** (2, 2, 9, 10 Cys — controls BPHPIM_02234/KMCKDB_02864 + ambiguous ENJDEI_05570/HNDBBG_03927): ALL hit **UDG fold (SCOP c.18.1)**, non-Fe–S templates (1UDG, 1UI0, 1VK2, 4WPK). Even 9–10 Cys reps were non-Fe–S (scattered cysteines, no FCL) — **directly vindicates the Cys-count concern.**
-- **FCL motif scan** on the 283 ≥4-Cys members (regex `C.{3,8}C.{1,4}C.{2,8}C`): **0 of 283** have the iron-sulfur cluster loop motif.
-- **MutY + Nth reps** (IHOGBB_05096, CGIDCJ_00434; both 10 Cys, C-terminal FCL): HHpred → **HhH-GPD fold (SCOP a.96)**, EndoIII/MutY templates **with bound [4Fe-4S]** (1ORN, 2ABK, 3N5N "HET: SF4").
-- **THREE converging lines** → broad `DNA_glycosylase` (UDG, 832 functional) is **non-Fe–S uracil glycosylase → DEMOTED**; genuine Fe–S glycosylases = **MutY (187) + Nth (172)** (HhH-GPD [4Fe-4S]), retained.
-- **Note on rigor:** initially over-reached toward demoting on 4 examples; corrected by requiring the HMM-identity + FCL-scan evidence before family-level demotion.
+### 10.2 DNA glycosylase reclassification
+The defining HMM is Pfam UDG, a function-based rather than cofactor-based model. HHpred on four
+representatives spanning 2–10 cysteines returned the UDG fold (SCOP c.18.1) against non-Fe–S
+templates in every case, including the 9- and 10-cysteine representatives — scattered cysteines
+with no iron-sulfur cluster loop. A regex scan for the FCL motif (`C.{3,8}C.{1,4}C.{2,8}C`) across
+the 283 members carrying ≥ 4 cysteines returned **0 of 283**. MutY and Nth representatives, by
+contrast, returned the HhH-GPD fold (SCOP a.96) against EndoIII and MutY templates with bound
+[4Fe–4S]. On these three converging lines the broad UDG `DNA_glycosylase` family was demoted and
+the genuine Fe–S glycosylases MutY and Nth retained as separate families.
 
-## 10.3 — Orphan adjudication (4 candidate-novel singletons)
+### 10.3 Orphan adjudication
 | Orphan | aa | HHpred fold | Verdict |
 |---|---|---|---|
-| BCG_2352 | 128 | Molybdoenzyme/formate-dehydrogenase [4Fe-4S] (YjgC; 2IV2 FE4S4) | **Genuine Fe–S** |
-| MMAR_0590 | 102 | UDG fold; 5 Cys, **no FCL** | non-Fe–S |
-| Rv0246 | 436 | MFS membrane transporter (100%) | non-Fe–S |
+| BCG_2352 | 128 | molybdoenzyme / formate dehydrogenase [4Fe–4S] (2IV2) | genuine Fe–S |
+| MMAR_0590 | 102 | UDG fold, 5 Cys, no FCL | non-Fe–S |
+| Rv0246 | 436 | MFS membrane transporter | non-Fe–S |
 | Rv0311 | 409 | DUF6125 / TRAPP / H-NOX | non-Fe–S |
-- **1 of 4 confirmed Fe–S; 3 reclassified.** Honest outcome — flagging was appropriately cautious.
 
-## 10.4 — SerA_dehydrogenase
-- 135/136 ≤2 Cys; full-length 529-aa phosphoglycerate dehydrogenase; KEGG non-Fe–S enzyme. Flagged likely non-Fe–S (count + length + annotation conclusive; structural HHpred optional).
+One of four confirmed; three reclassified.
 
-## 10.5 — Repertoire correction propagated
+### 10.4 SerA_dehydrogenase — retained, flagged
+The sequence-layer scan flagged 135 of 136 SerA proteins as carrying ≤ 2 cysteines, and KEGG
+annotates SerA as a non-Fe–S phosphoglycerate dehydrogenase. The family is nonetheless **retained**
+in the atlas, for three reasons. First, the family derives from the curated seed set, whose entries
+were structurally vetted upstream, so demotion would discard curated evidence on a sequence-count
+screen that Step 8.5 explicitly identifies as insufficient grounds for family-level demotion.
+Second, the UDG case (10.2) established the evidentiary bar for demoting a whole family — HMM
+identity, an independent motif scan and fold-level evidence had to converge — and SerA meets only
+the first of those. Third, retention is conservative in the direction that matters: the family is
+reported throughout as coordination-unconfirmed, it is excluded from every claim that rests on
+confirmed coordination, and its status is carried in the `confidence` column of
+`06_coordination/coordination_refined_v2.tsv` so that any downstream user can exclude it. Readers
+wishing to exclude SerA can do so without recomputing the atlas; the effect is to reduce the atlas
+by one family and by the SerA protein count.
+
+### 10.5 Scope of validation
+Families built from curated UniProt Fe–S seeds are literature-grounded, and definitional Fe–S Pfam
+families (Fer2, Fer4, Rieske, Radical_SAM, Molybdop_Fe4S4, Whib) have Fe–S binding intrinsic to the
+domain. UDG was the unique risk: the only family defined by a function-based model, which
+over-recruited non-Fe–S members. Validation at this step was therefore risk-targeted rather than
+blanket; all 44 families are tested structurally in Step 13.
+
+**Core tier after Step 10:** **24,480 proteins, 34 families** (`all_hits_final_v2.tsv`).
+
+---
+
+# STEP 11 — Pfam–GO expansion and the v3 atlas
+
+**Goal:** recover divergent or under-annotated Fe–S proteins invisible to the seed-derived HMMs.
+
+### 11.1 Define the Fe–S Pfam set
+Pfam families were selected by gene ontology annotation via pfam2go, retaining those carrying
+Fe–S-binding GO terms (`GO:0051536` iron–sulfur cluster binding and its descendants
+`GO:0051537`, `GO:0051538`, `GO:0051539`). The resulting HMM set is
+`03_hmms/extended_pfam/feS_new_families.hmm`, with the family mapping in
+`03_hmms/extended_pfam/all_feS_pfam.tsv`.
+
+### 11.2 Scan and merge
+The 277 proteomes were rescanned with the expanded set and hits merged with the core tier,
+retaining the better-scoring assignment per protein and recording the discovery route in a
+`provenance` column (`core_validated` / `extended_pfam`).
+
+### 11.3 Validate the expansion
+Expanded proteins were required to pass the same coordination screen as the core, and their
+placement was checked in the sequence-similarity network: expanded proteins integrate within the
+same components as seed-derived proteins rather than forming satellite clusters.
+
+### 11.4 v3 atlas
+**28,789 proteins across 44 families** — 24,480 (85.0 %) `core_validated` and 4,309 (15.0 %)
+`extended_pfam`. Ten families derive all their members from the expansion, including IspH (LytB),
+NadA, ThiC, IlvD, SufU, CDGSH/NEET and NifU. The SSN was rebuilt on this atlas, giving 2,234
+representatives.
+
+### 11.5 Prevalence tiers
+Because one genome is retained per species, prevalence is the percentage of species encoding a
+family: **21 core** (≥ 95 % of species), **18 accessory** (10–95 %), **5 rare** (< 10 %); nine
+families are present in every species sampled.
+
+**Deliverables:** `04_results/all_hits_final_v3.tsv`, `04_results/fes_family_matrix_v3.tsv`,
+`05_sequences/fes_functional_28789.faa`, `data/TableS4_fes_atlas_28789_proteins.csv`.
+
+---
+
+# STEP 12 — Functional and pathway classification
+
+Functional annotation of all Fe–S proteins was performed with **eggNOG-mapper v3.3.0** against the
+**eggNOG v7** orthology database. Clusters of orthologous groups (COG) categories, KEGG pathway and
+module assignments and EC numbers were transferred from the best-scoring orthologue. COG categories
+were assigned to 99.8 % of proteins and KEGG pathways, excluding generic global-metabolism maps, to
+52.5 %.
+
+Each family was additionally assigned to one of **19 curated functional categories** (electron
+transfer, energy metabolism, redox regulation, cofactor biosynthesis, amino-acid biosynthesis, DNA
+repair and so on) through `09_functional/family_function_map.tsv`. Category assignment is at family
+level and is independent of the eggNOG annotation, so the two provide mutually independent views of
+the same proteome.
+
+**Deliverables:** `09_functional/fes_v3_eggnog.tsv`, `09_functional/fes_v3_categorized.tsv`,
+`09_functional/csv_functional_categories_v3.csv`, `09_functional/family_function_map.tsv`.
+
+---
+
+# STEP 13 — Structural modelling, coordination geometry and fold clustering
+
+### 13.1 Representative modelling
+A representative sequence from each of the 44 families was modelled with **AlphaFold3**. Models were
+generated **without the Fe–S cofactor** — that is, as apo structures — so that the coordination test
+below is a property of the predicted protein geometry rather than of a modelled ligand. Model
+quality is recorded as mean pLDDT and pTM in `13_structural/model_plddt.tsv` and
+`13_structural/model_confidence.tsv`.
+
+### 13.2 Coordination-geometry validation
+Coordination was assessed geometrically rather than by sequence count, addressing the caveat
+recorded in Step 8.5. A family was scored as presenting a bona fide coordination site when the
+model showed **three or more cysteine sulfur atoms converging within 7.5 Å**, or, for Rieske-type
+families, a **2Cys–2His** arrangement. The 7.5 Å window follows the Sγ–Sγ separations reported for
+experimentally determined [4Fe–4S] and [2Fe–2S] sites (Wehrspan et al. 2022).
+
+**Result:** 37 of 44 families (84 %) present a coordination site — 34 by cysteine triad and 3 by the
+Rieske arrangement. Of the remaining seven, two are cluster-delivery scaffolds, which bind their
+cofactor transiently and are not expected to present a static site, and five are
+coordination-unconfirmed. SerA_dehydrogenase (10.4) is reported among the unconfirmed set.
+
+### 13.3 All-against-all structural comparison
+Pairwise structural similarity among the 44 representatives was quantified by all-against-all
+alignment with **TM-align**, each pair normalised by the shorter chain and the resulting matrix
+symmetrised. The matrix is `13_structural/tmalign_similarity_matrix.csv`.
+
+### 13.4 Fold clustering
+Distances were taken as 1 − TM-score and clustered by **complete linkage**. Complete linkage was
+chosen deliberately: average linkage chained on this matrix, producing a single group of 34–39
+families at every cut tested, because many Fe–S folds share small similar substructures that average
+linkage treats as grounds for merging. Complete linkage requires every member of a group to exceed
+the threshold against every other member, which is the semantics that "same fold" demands.
+
+The dendrogram was cut at **TM-score 0.5**, the conventional threshold for shared fold assignment
+(Xu & Zhang 2010), giving **8 fold groups** and leaving **25 families with no structural relative**.
+Within-group similarity far exceeds between-group similarity (mean TM-score 0.647 against 0.277;
+Wilcoxon signed-rank, p < 0.001).
+
+**Deliverables:** `13_structural/`, `fig4_fold_groups.csv`, AlphaFold3 model coordinates.
+
+---
+
+# STEP 14 — Phylogenetics and residue conservation
+
+### 14.1 Species tree
+A concatenated alignment of conserved single-copy marker genes was generated across the 277
+genomes and used to infer the species tree with **IQ-TREE 2**, the substitution model selected by
+**ModelFinder** and branch support assessed by 1,000 ultrafast bootstrap replicates. The tree is
+`12_phylogenetics/species_tree.treefile`.
+
+### 14.2 Family trees
 ```bash
-# demote UDG: all_hits_final.tsv -> all_hits_final_v2.tsv (status nonFeS_UDG_demoted)
-# 837 DNA_glycosylase rows = 832 functional + 5 pseudogene
-# 25,312 - 832 = 24,480 functional
-# regenerate matrix, 4 CSVs, 3 figures (all *_corrected)
+mafft --auto family.faa > family.aln
+trimal -in family.aln -out family.trim -gt 0.2
+iqtree2 -s family.trim -m MFP -B 1000 -T AUTO --prefix family
 ```
-**CORRECTED REPERTOIRE:** **24,480 functional Fe–S proteins | 34 families | 13 core** (DNA_glycosylase UDG dropped from core; MutY 67.5% + Nth 62.1% are accessory).
-- 13 core families: Glutamate_synthase, Ferredoxin_4Fe4S, WhiB, SDH_FRD, Radical_SAM, SUF_biogenesis (277); Rieske, Ferredoxin_2Fe2S (276); Molybdoenzyme (275); NADH_dehydrogenase (274); FprB (273); IspG (272); Radical_SAM_MoaA (266).
+Per-family maximum-likelihood trees were inferred for the families with sufficient membership and
+are in `12_phylogenetics/*.treefile`. The pipeline script is
+`12_phylogenetics/run_family_phylo.sh`.
 
-## 10.6 — Validation scoping (why not all 35 families)
-- Families built from curated UniProt Fe–S seeds (≈25 families) are literature-grounded; definitional-Fe–S Pfam families (Fer2/Fer4/Rieske/Radical_SAM/Molybdop_Fe4S4/Whib) have Fe–S binding intrinsic to the domain. **UDG was the unique risk:** the only family defined by a function-based Pfam model (not a cofactor-based one), which over-recruited non-Fe–S members. Risk-targeted validation, not blanket.
+### 14.3 Gene-tree / species-tree congruence
+Congruence was quantified as the **Spearman rank correlation between patristic distances** — for
+every pair of genomes represented in a family tree, the path-length distance in that tree against
+the path-length distance in the species tree. This measure is independent of rooting and tolerates
+paralogy, both of which defeat clade-retention measures on unrooted trees carrying multiple copies
+per genome. Where a genome contributes several paralogues, the minimum pairwise distance is used.
 
-**STEP 10 DELIVERABLES:** `step10_structural/` (HHpred .hhr files, AF3 .cif/.pdb models, TMalign outputs, reference PDBs 1R94/2P2E, `flagged_validation/`, `orphans4.faa`, FCL scans), `all_hits_final_v2.tsv`, `*_corrected` matrix/CSVs/figures, `STEP10_structural_validation_README.md`.
+### 14.4 Residue conservation
+Per-column conservation was computed from the trimmed family alignments, with the proportion of
+gap-free sequences recorded alongside so that conservation at sparsely occupied columns is not
+over-read. Columns corresponding to predicted cluster-coordinating cysteines were identified from
+the Step 13.2 geometry and mapped onto the alignment.
+
+### 14.5 Statistical treatment of conservation
+For each family, the mean per-column conservation of predicted coordinating cysteine positions was
+compared with that of all remaining alignment columns, giving **one paired difference per family**.
+Significance within a family was assessed by Mann–Whitney U with **Benjamini–Hochberg** correction
+across the 37 families with resolved coordination sites; consistency of the direction of effect
+across families was assessed by a **two-sided sign test**.
+
+This design replaces an earlier pooled comparison that treated every alignment column in every
+family as an independent observation. That pooling is pseudoreplication — columns within a family
+are not independent — and it produced an implausibly small p value. Only the per-family paired
+analysis is reported.
+
+**Result:** the difference is positive in all 37 families (median +0.202, range +0.069 to +0.518;
+two-sided sign test, p = 1.5 × 10⁻¹¹) and individually significant in 31 of 37 after
+Benjamini–Hochberg correction.
+
+**Deliverables:** `11_conservation/conservation.py`, `11_conservation/conservation_summary.tsv`,
+`12_phylogenetics/`.
 
 ---
 
-# CURRENT STATUS & REMAINING WORK
+# STEP 15 — *M. tuberculosis* essentiality, selectivity and phylogenomic distribution
 
-**DONE (Half 1 — identification/classification, complete & structurally validated):**
-- Steps 1–10: seeds → genomes → annotation → HMMs → scan → classification → demotion → coordination → SSN → structural validation.
-- Final repertoire: **24,480 Fe–S proteins, 34 families, 13 core**, across 277 genomes.
+### 15.1 Essentiality mapping
+The Fe–S proteins of *M. tuberculosis* H37Rv were cross-referenced with the genome-wide
+transposon-mutagenesis essentiality calls of DeJesus et al. (2017). Of the 72 Fe–S proteins
+encoded by H37Rv, 57 mapped to Rv numbers and 55 carried definitive calls; 15 could not be mapped
+and 2 were uncertain. Mapping is recorded in `10_tb_analysis/mtb_fes_rv_mapped.tsv`.
 
-**POLISH (close Depth A clean):**
-- DUF779 literature check (novelty framing).
-- Propagate UDG flag into `coordination_refined.tsv` for full consistency.
-- Optional positive-control HHpred (1 Fer4 + 1 Radical_SAM) + SerA HHpred.
-- Recolor full-repertoire SSN by corrected status (corroborates UDG correction).
+### 15.2 Enrichment test
+Essential and growth-defect calls among Fe–S proteins were compared with the genome-wide reference
+by **two-sided Fisher's exact test** with the Haldane–Anscombe correction applied to the odds ratio.
+Both arms were evaluated on the same category definition and genes with uncertain calls were
+excluded from both.
 
-**REMAINING ANALYSES (roadmap):**
-- **Step 11 — Functional mapping (Half 2 of research question):** KEGG/KO + GO (kofamscan) → metabolism (TCA, respiration, cofactor biosynthesis); redox homeostasis (ferredoxins, WhiB regulators, Rieske); virulence (WhiB3/WhiB6/WhiB7, ESX, SUF operon) + Mtb essentiality (DeJesus TnSeq). Requires completing deferred `category` metadata column.
-- **Step 12 — Per-family SSNs:** batch the 11 qualifying families through EFI-EST.
-- **Step 13 — Phylogenetics:** per-family mafft→trimal→IQ-TREE; gain/loss across 277; dN/dS.
-- **Step 14 — Depth-B comprehensive structural analysis:** representative folds per family, TMalign all-vs-all clustering (Alba Fig 3 equivalent).
-- **Step 15 — Synthesis / thesis writing.**
+**Result:** 16 of 55 (29.1 %) against 596 of 3,943 genome-wide (15.1 %) — a 1.93-fold enrichment
+(odds ratio 2.30, 95 % CI 1.28–4.15; p = 7.6 × 10⁻³). A sensitivity analysis across three
+alternative category groupings gave fold enrichments of 1.84 to 2.02 (all p < 0.025).
+
+### 15.3 Target selectivity
+The Fe–S proteins of H37Rv were searched against the human reference proteome (UniProt
+**UP000005640**) with **DIAMOND blastp** in `--very-sensitive` mode. A protein was considered to
+lack a detectable human homologue when no alignment reached **E ≤ 1 × 10⁻³**; no identity or
+coverage threshold was applied. The absence of secondary filters is deliberate — the question is
+whether any detectable homologue exists, and an identity or coverage cut-off would convert weak but
+real homologues into apparent absences, inflating the selectivity claim.
+
+**Result:** 11 of the 16 essential or growth-defect proteins return no alignment at this threshold.
+
+### 15.4 Allometry of Fe–S content
+Fe–S complement was regressed against predicted proteome size across the 277 genomes by ordinary
+least squares, with outliers identified by studentised residual, and separately by a
+negative-binomial fit on log–log scale to estimate the scaling exponent.
+
+**Result:** Spearman ρ = 0.77 (p = 1.3 × 10⁻⁵⁴); OLS R² = 0.64; 18.8 additional Fe–S proteins per
+1,000 predicted proteins; negative-binomial scaling exponent 1.07, with Fe–S proteins constituting
+1.89 ± 0.22 % of the proteome. *M. leprae* and *M. lepromatosis* are the only genomes beyond a
+studentised residual of −3.
+
+### 15.5 Phylogenomic distribution
+Genomes were grouped by cutting the species tree at a depth chosen by bisection to yield the target
+number of clades. Repertoire similarity between genomes was computed as **Jaccard distance** on
+family presence/absence and ordinated by **principal coordinates analysis**. Family-level
+enrichment between groups was tested by Fisher's exact test with Benjamini–Hochberg correction.
+
+**Phylogenetic control.** Clinically relevant species are concentrated in a single clade, so any
+enrichment found across all 277 genomes may reflect shared ancestry rather than clinical status. The
+identical test was therefore repeated **within** that clade, where phylogeny is approximately held
+constant. A family that remains significant within the clade is associated with clinical status; one
+that loses significance was a clade marker. This control is implemented in `check_fig8_confound.py`
+and its output is reported alongside the primary test.
+
+**Deliverables:** `10_tb_analysis/`, `14_taxonomy/`, `fig8_genome_coords.csv`,
+`fig8_within_clade_test.csv`.
 
 ---
 
-*Document generated 2026-06-03. All counts traceable to `all_hits_final_v2.tsv` and `coordination_refined.tsv`.*
+## Software
+
+| Tool | Purpose |
+|---|---|
+| Bakta | uniform genome annotation |
+| CheckM2 | genome quality filtering |
+| MMseqs2 | seed clustering |
+| MAFFT | multiple sequence alignment |
+| trimAl | alignment trimming |
+| HMMER (hmmbuild, hmmsearch, hmmfetch, hmmscan) | profile HMM construction and search |
+| CD-HIT | SSN representative selection |
+| EFI-EST, Cytoscape | sequence-similarity networks |
+| HHpred | remote fold identification |
+| AlphaFold3 | structure prediction |
+| TM-align | structural superposition |
+| AlphaFill | cofactor transplantation |
+| foldseek | structure search |
+| IQ-TREE 2, ModelFinder | phylogenetic inference |
+| eggNOG-mapper v3.3.0 (eggNOG v7) | functional annotation |
+| DIAMOND | human homology search |
+| SeqKit, Biopython, pandas, SciPy, scikit-learn | data handling and statistics |
+
+Exact version strings and full command lines for each step are recorded in the step directories.
+
+---
+
+*All counts in this document refer to the v3 atlas and are traceable to
+`04_results/all_hits_final_v3.tsv`, `09_functional/fes_v3_categorized.tsv` and
+`06_coordination/coordination_refined_v2.tsv`.*
