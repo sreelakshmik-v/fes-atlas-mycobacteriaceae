@@ -2,7 +2,7 @@
 
 Data and code accompanying the manuscript:
 
-> Sreelakshmi K V, Sarode VV, Shenoy G G, Dehury B. *Unified by chemistry, not fold: A genus-wide
+> Sreelakshmi K V, Vedant Vikas Sarode, Gautham Shenoy G, Dehury B. *Unified by chemistry, not fold: A genus-wide
 > atlas of the mycobacterial iron–sulfur proteome and its antitubercular target space.*
 
 Genome-wide identification, classification, coordination, network, structural and functional
